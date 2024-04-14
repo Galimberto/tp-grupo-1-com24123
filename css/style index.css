@@ -16,6 +16,7 @@ html body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    
             
 }
 
@@ -127,8 +128,7 @@ main{
     background-image: url('../img/Aterdecer.jpg') ;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    min-height: 500px;
+    background-repeat: no-repeat;    
             
 }
 
@@ -147,7 +147,7 @@ main{
     position: relative;
     color: white; /* Color del texto para contraste con la capa oscura */
     text-align: center; /* Centra el texto horizontalmente */
-    padding: 50px 200px;
+    padding: 50px 50px;
     z-index: 2; /* Asegúrate de que el texto esté encima de la capa de color */
 }
 
@@ -162,7 +162,10 @@ main{
     font-size: 20px;
     font-weight: 200;
     line-height: 40px;
+    margin: 60px 50px;
 }
+
+
 
 /*---------------SECCION TIPS---------------*/
 
@@ -182,8 +185,12 @@ main{
     margin-bottom: 40px;
     background-color:rgb(1, 1, 1);
     color: #7BD009;
-    padding: 20px;
-    border-radius: 5px;
+    display: block;
+    border-radius: 10px;
+    padding: 40px 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 10px;
 
 }
 
@@ -338,12 +345,6 @@ main{
     
  }
 
- /*.footer-items > * {
-        flex: 1 1 33%; 
-        padding: 10px; 
-        box-sizing: border-box;
-    }    */
-
  .datos{
     display: flex;
     flex-direction: column;
@@ -370,24 +371,81 @@ main{
      
     
 }
+/*----------------MEDIA QUERIES-----------------*/
 
+img {
+    max-width: 100%; /* Hace que las imágenes sean responsivas */
+    height: auto;
+}
 
- 
- /*MENU HAMBURGUESA*/
- /*@media (max-width: 768px) {
-    header {
-        flex-direction: column; 
+.header, .footer, .section {
+    width: 100%; /* Asegura que los elementos no sobresalgan del viewport */
+}
 
-    .logo, nav {
-        flex: none; 
-        width: 100%; 
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Cambia la orientación de la navegación a vertical en pantallas pequeñas */
+    }
+    .nav ul {
+        flex-direction: column;
+    }
+    .card {
+        flex-basis: 100%; /* Hace que las tarjetas tomen todo el ancho en dispositivos pequeños */
+    }
+    .section-Bienvenidos .content-Bienvenidos{
+        padding: 0;
     }
 
-    nav ul {
-        flex-direction: column; 
-    } */
+    .section-Bienvenidos h1{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 35px;
+        color: #f3f3f3;
+    }
 
+    .section-Bienvenidos p {        
+        margin: 0px;
+        padding: 0px;
+    }   
 
+    .footer{
+        padding: 15px 25px;
+    }
+
+    .logo-footer {
+        text-align: center;
+        padding-top: 10px;
+        
+    }
+
+    .footer-items{
+        margin-top: 0;
+    }
+
+    .redes-sociales {
+        flex: 1 1 50%;
+        text-align: center;
+    }
+
+    .datos {
+        flex: 1 1 50%;
+    }
+
+    .logo-footer img {
+        max-width: 40%;
+        height: auto;
+        padding-top: 10px;
+    }
+}
+
+/*@media (max-width: 420px) {
+    
+    .section-Tips {        
+        margin: 0;
+        padding: 0px;
+        
+    }  
+}*/
 
 
 
