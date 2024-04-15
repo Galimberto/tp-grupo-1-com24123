@@ -1,22 +1,629 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rutas</title>
-    <link rel="stylesheet" href="css/home.css">
-</head>
-<body>
-    <header>
-        HEADER
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="/css/rutas.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./Static/img_inicio/Logotipo.png" alt="Logotipo Pedalear" />
+      </div>
+
+      <nav class="nav">
+        <ul class="nav links">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="rutas.html">RUTAS</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
     </header>
+    <main class="container-main">
+      <section class="rutas-banner">
+        <p>No te quedes en el barro..!</p>
+        <div class="img-banner"></div>
+        <p>selecciona una de nuestras rutas...<a href="#presentacion">👇</a></p>
+      </section>
 
-    <main>
+      <section class="rutas-presentacion" id="presentacion">
+        <h1>Nuestras Rutas</h1>
+        <div class="rutas">
+          <h2>Rutas Light</h2>
+          <div class="container-img">
+            <div class="slider">
+              <p>Sierra de la ventana</p>
+              <a href="#ruta-1"><div class="slider-ruta-1 slider-res"></div></a>
+            </div>
+            <div class="slider">
+              <p>Otamendi</p>
+              <a href="#ruta-2"><div class="slider-ruta-2 slider-res"></div></a>
+            </div>
+            <div class="slider">
+              <p>Carlos Keen</p>
+              <a href="#ruta-3"><div class="slider-ruta-3 slider-res"></div></a>
+            </div>
+            <div class="slider">
+              <p>Parque Iraola</p>
+              <a href="#ruta-4"><div class="slider-ruta-4 slider-res"></div></a>
+            </div>
+          </div>
+        </div>
+        <div class="rutas">
+          <h2>Rutas Hard</h2>
+          <div class="container-img">
+            <div class="slider">
+              <p>Talampaya</p>
+              <a href="#ruta-5"><div class="slider-ruta-5 slider-res"></div></a>
+            </div>
+            <div class="slider">
+              <p>El Palmar</p>
+              <a href="#ruta-6"><div class="slider-ruta-6 slider-res"></div></a>
+            </div>
+            <div class="slider">
+              <p>Siete Lagos</p>
+              <a href="#ruta-7"><div class="slider-ruta-7 slider-res"></div></a>
+            </div>
+            <div class="slider">
+              <p>San Rafael</p>
+              <a href="#ruta-8"><div class="slider-ruta-8 slider-res"></div></a>
+            </div>
+          </div>
+        </div>
+        <div class="rutas-footer">
+          <p>Haz click en una imágen para <span>+</span> info</p>
+          <p>
+            o clik en inicio para volver.. <span><a href="">INICIO</a></span>
+          </p>
+        </div>
+      </section>
 
+      <section class="rutas-desarrollo">
+        <article id="ruta-1">
+          <h3>Pbcia Bs As - Sierra de la Ventana</h3>
+          <div class="container-desrr">
+            <div class="galeria fot-vent"></div>
+
+            <div class="container-info">
+              <div class="txt-info">
+                <div class="head-info">
+                  <div>
+                    <span
+                      ><i class="fa fa-calendar-o" aria-hidden="true"></i
+                      ><b>fecha:</b> 4 de mayo</span
+                    >
+                    <span
+                      ><i class="fa fa-hourglass" aria-hidden="true"></i
+                      ><b>duracion:</b> 2 dias</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      ><i class="fa fa-bicycle" aria-hidden="true"></i
+                      ><b>nivel:</b> medio</span
+                    >
+                    <span
+                      ><i class="fa fa-map" aria-hidden="true"></i
+                      ><b>distancia:</b> 75 Km</span
+                    >
+                  </div>
+                </div>
+                <div class="main-txt-info">
+                  <p>
+                    Las Sierras de la Ventana son un destino increíble para los
+                    amantes del cicloturismo. Este circuito incluye
+                    <b>La Vuelta de Peralta (32 km).</b>Recorre caminos rurales
+                    pasando por el Puente Blanco, el Paraje Peralta, y finaliza
+                    en los Jardines del Pillahuinco. Es una ruta que te
+                    permitirá disfrutar de vistas panorámicas y experimentar la
+                    naturaleza agreste. Tambien esta
+                    <b>La Vuelta del Cóndor.</b> Esta ruta pasa por la Estancia
+                    homónima y desciende hacia la localidad de Saldungaray.
+                    Ideal para aquellos que buscan un recorrido más desafiante.
+                  </p>
+                </div>
+                <div class="mapa-info">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d100292.25745776434!2d-62.07138557229983!3d-38.23001994711533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e1!4m5!1s0x95ec5a617cb8d2e7%3A0xf55677caa259a8a!2sTres%20Picos%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-38.289608199999996!2d-62.208285999999994!4m5!1s0x95eceecaad346b1f%3A0xc32bb114493c92a5!2sSierra%20de%20la%20Ventana%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-38.139328!2d-61.7941399!4m5!1s0x95ece615fd2df8b7%3A0xa1b1390574c2c043!2sSaldungaray%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-38.2051334!2d-61.769716599999995!5e0!3m2!1ses!2sar!4v1713023466037!5m2!1ses!2sar"
+                    width="550"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <p class="volver"><a href="#presentacion">volver</a></p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article id="ruta-5">
+          <h3>Catamarca - Talampaya</h3>
+          <div class="container-desrr">
+            <div class="galeria fot-tala"></div>
+            <div class="container-info">
+              <div class="txt-info">
+                <div class="head-info">
+                  <div>
+                    <span
+                      ><i class="fa fa-calendar-o" aria-hidden="true"></i
+                      ><b>fecha:</b> 20 de noviembre</span
+                    >
+                    <span
+                      ><i class="fa fa-hourglass" aria-hidden="true"></i
+                      ><b>duracion:</b> 5 dias</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      ><i class="fa fa-bicycle" aria-hidden="true"></i
+                      ><b>nivel:</b> avanzado</span
+                    >
+                    <span
+                      ><i class="fa fa-map" aria-hidden="true"></i
+                      ><b>distancia:</b> 310 Km</span
+                    >
+                  </div>
+                </div>
+                <div class="main-txt-info">
+                  <p>
+                    <b>Ruta de Cicloturismo en Talampaya-La Rioja:</b> Comienza
+                    tu aventura de cicloturismo explorando el impresionante
+                    Cañón Talampaya. Disfruta de los espectaculares paisajes de
+                    formaciones rocosas, acantilados, cuevas y petroglifos
+                    mientras pedaleas por este emblemático lugar. Continúa tu
+                    recorrido de cicloturismo ascendiendo por la Cuesta de
+                    Miranda, una carretera serpenteante que ofrece vistas
+                    panorámicas impresionantes del valle y las montañas
+                    circundantes. Disfruta del paisaje, la flora y la fauna
+                    local mientras te diriges hacia la cima. Finaliza tu ruta de
+                    cicloturismo explorando el Valle de la Luna, otro lugar
+                    emblemático y fascinante del Parque Nacional Talampaya.
+                    Descubre las formaciones geológicas únicas, los colores
+                    vibrantes y las texturas del terreno mientras te sumerges en
+                    la belleza natural y la historia cultural de este increíble
+                    lugar.
+                  </p>
+                </div>
+                <div class="mapa-info">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d443767.7468308889!2d-67.81891998508098!3d-29.66364534646941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e1!4m5!1s0x9682cbe0db31a667%3A0xbd08e1f8e59f8243!2sParque%20Nacional%20Talampaya%20-%20Patrimonio%20de%20la%20Humanidad%2C%20La%20Rioja!3m2!1d-29.7826667!2d-67.83539999999999!4m5!1s0x969d3ffa2445b98f%3A0xf7ca25a537baa095!2sCuesta%20de%20Miranda%2C%20La%20Rioja!3m2!1d-29.3444444!2d-67.7680556!4m5!1s0x9427db0d35a5add9%3A0x67b565aadcda7b28!2sValle%20de%20la%20luna%20San%20Juan%2C%20San%20Antonio%2C%20La%20Rioja!3m2!1d-29.428336299999998!2d-66.8866567!5e0!3m2!1ses!2sar!4v1713028040732!5m2!1ses!2sar"
+                    width="550"
+                    height="350"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <p class="volver"><a href="#presentacion">volver</a></p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article id="ruta-2">
+          <h3>Pbcia Bs As - Otamendi</h3>
+          <div class="container-desrr">
+            <div class="galeria fot-ota"></div>
+            <div class="container-info">
+              <div class="txt-info">
+                <div class="head-info">
+                  <div>
+                    <span
+                      ><i class="fa fa-calendar-o" aria-hidden="true"></i
+                      ><b>fecha:</b> 4 de mayo</span
+                    >
+                    <span
+                      ><i class="fa fa-hourglass" aria-hidden="true"></i
+                      ><b>duracion:</b> 1 dia</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      ><i class="fa fa-bicycle" aria-hidden="true"></i
+                      ><b>nivel:</b> principiante</span
+                    >
+                    <span
+                      ><i class="fa fa-map" aria-hidden="true"></i
+                      ><b>distancia:</b> 82 Km</span
+                    >
+                  </div>
+                </div>
+                <div class="main-txt-info">
+                  <p>
+                    Partimos desde Otamendi, donde dejaremos los vehículos en un
+                    estacionamiento privado. <b>Cruce de Balsas:</b> Pasamos por
+                    el Río Paraná de las Palmas, el Arroyo las Piedras y Canal
+                    Alem en balsas para llegar al antiguo Recreo Blondeau.
+                    <b>Recreo Blondeau:</b> Almuerzo campestre junto al río en
+                    este lugar con historia y encanto.
+                    <b>Regreso a Otamendi:</b> Realizamos todos los cruces de
+                    balsas y exploramos la cuesta de las barrancas. Este
+                    recorrido es conocido por la presencia de fauna
+                    característica de la zona del delta del Paraná, como el
+                    ciervo de los pantanos, la pajonalera de pico recto y el
+                    espartillero enano. Experiencia Única: Disfruta de paisajes
+                    impresionantes, túneles vegetales, y la sensación de estar
+                    rodeado de naturaleza virgen.
+                  </p>
+                </div>
+                <div class="mapa-info">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d105671.89977789638!2d-58.859203498865554!3d-34.14002574330133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e1!4m5!1s0x95bb6fbf96a3f675%3A0x28e6b77a919bdd57!2sOtamendi!3m2!1d-34.2221888!2d-58.896656!4m5!1s0x95bb6ef42105690f%3A0x71a12dd4da48d789!2sTrasbordador%20Rio%20Parana%20DELTA!3m2!1d-34.181022!2d-58.870706999999996!4m5!1s0x95bb6bb539e4f027%3A0xfcf6f36814553c88!2s3%C2%B0%20Balsa%20Rio%20Carabelas!3m2!1d-34.110095699999995!2d-58.783899299999995!4m5!1s0x95bb6abcc0257129%3A0xaf6c4ae06566362d!2sEP%20N%C2%B0%2024%20Y%20MS%20ANEXO%203181!3m2!1d-34.0582102!2d-58.750244099999996!4m5!1s0x95bb43740aefc37f%3A0xf2080b46973cf882!2sFinca%20Don%20Agust%C3%ADn%20-%20Playa%20Erondina!3m2!1d-34.1676973!2d-58.656826699999996!5e0!3m2!1ses!2sar!4v1713031131874!5m2!1ses!2sar"
+                    width="550"
+                    height="400"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <p class="volver"><a href="#presentacion">volver</a></p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article id="ruta-6">
+          <h3>Entre Rios - El Palmar de Colon</h3>
+          <div class="container-desrr">
+            <div class="galeria fot-pal"></div>
+            <div class="container-info">
+              <div class="txt-info">
+                <div class="head-info">
+                  <div>
+                    <span
+                      ><i class="fa fa-calendar-o" aria-hidden="true"></i
+                      ><b>fecha:</b> 15 de abril</span
+                    >
+                    <span
+                      ><i class="fa fa-hourglass" aria-hidden="true"></i
+                      ><b>duracion:</b> 3 dias</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      ><i class="fa fa-bicycle" aria-hidden="true"></i
+                      ><b>nivel:</b> medio</span
+                    >
+                    <span
+                      ><i class="fa fa-map" aria-hidden="true"></i
+                      ><b>distancia:</b> 82 Km</span
+                    >
+                  </div>
+                </div>
+                <div class="main-txt-info">
+                  <p>
+                    <b>Descubre El Palmar en Colón, Argentina:</b> Un Paraíso
+                    Natural para los Amantes del MTB Ubicado en la provincia de
+                    Entre Ríos, cerca de la ciudad de Colón, El Palmar es un
+                    destino imperdible para los aficionados al ciclismo de
+                    montaña (MTB) que buscan aventura, naturaleza y paisajes
+                    espectaculares en sus rutas y senderos. Con su exuberante
+                    vegetación, diversidad de fauna, ríos, arroyos y ambiente
+                    tranquilo, El Palmar ofrece una experiencia única y
+                    emocionante para los ciclistas de montaña de todos los
+                    niveles y habilidades. Senderos y Rutas El Palmar cuenta con
+                    una variedad de senderos y rutas diseñados para satisfacer
+                    las necesidades y habilidades de los ciclistas de montaña,
+                    desde principiantes hasta expertos. Por otro lado, los
+                    senderos de nivel intermedio y avanzado brindan emocionantes
+                    descensos, subidas empinadas y terrenos variados,
+                    proporcionando un desafío y adrenalina para los ciclistas
+                    más experimentados y aventureros.
+                  </p>
+                </div>
+                <div class="mapa-info">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d215703.91371738957!2d-58.436724029704116!3d-32.35552055243695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1s0x95ae331d07246d4d%3A0xc77c182ffe7b3f09!2zQ29sw7NuLCBFbnRyZSBSw61vcw!3m2!1d-32.2249328!2d-58.144714199999996!4m5!1s0x95afd0a7c9fb97b7%3A0xf158558c50d4cf66!2sEl%20Palmar%2C%20Concepci%C3%B3n%20del%20Uruguay%2C%20Entre%20R%C3%ADos!3m2!1d-32.447260299999996!2d-58.2676831!5e0!3m2!1ses!2sar!4v1713032052519!5m2!1ses!2sar"
+                    width="550"
+                    height="350"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <p class="volver"><a href="#presentacion">volver</a></p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article id="ruta-3">
+          <h3>Pbcia Bs As - Carlos Keen</h3>
+          <div class="container-desrr">
+            <div class="galeria fot-keen"></div>
+            <div class="container-info">
+              <div class="txt-info">
+                <div class="head-info">
+                  <div>
+                    <span
+                      ><i class="fa fa-calendar-o" aria-hidden="true"></i
+                      ><b>fecha:</b> 2 de junio</span
+                    >
+                    <span
+                      ><i class="fa fa-hourglass" aria-hidden="true"></i
+                      ><b>duracion:</b> 1 dia</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      ><i class="fa fa-bicycle" aria-hidden="true"></i
+                      ><b>nivel:</b> principiante</span
+                    >
+                    <span
+                      ><i class="fa fa-map" aria-hidden="true"></i
+                      ><b>distancia:</b> 82 Km</span
+                    >
+                  </div>
+                </div>
+                <div class="main-txt-info">
+                  <p>
+                    Carlos Keen es un lugar ideal para los amantes del
+                    cicloturismo y el mountain bike (MTB). Ruta Carlos Keen -
+                    Villa Ruiz - torres, esta ruta combina asfalto y tierra,
+                    ofreciendo varias alternativas de caminos. Puedes disfrutar
+                    de un paseo tranquilo a través de hermosos pueblos. Ideal
+                    para entrenar sobre caminos de tierra o explorar caminos
+                    rurales. El recorrido es mayormente de tierra firme, con
+                    poca piedra y sin riesgo de romper cubiertas o dañar la
+                    bicicleta. La travesia recorre caminos rurales de tierra en
+                    buen estado, pasando por pueblos tranquilos y hermosos. En
+                    la vuelta, puedes disfrutar de una comida en el puesto de
+                    comidas de la estación de tren de Carlos Keen. Incluso
+                    puedes disfrutar de una parrillada en La Esquina de
+                    Cortinez. Un recorrido que combina asfalto y tierra. ¡Un
+                    excelente día en bicicleta.
+                  </p>
+                </div>
+                <div class="mapa-info">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d105233.60995103403!2d-59.24769213438591!3d-34.488930401166435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e1!4m5!1s0x95bb876536f1aab3%3A0x30d6d2338e215d95!2sCarlos%20Keen%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.486214499999996!2d-59.218906499999996!4m5!1s0x95bb85d1354b7a0d%3A0x3df03591a96bf2ee!2sVilla%20Ruiz%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.4360528!2d-59.2602146!4m5!1s0x95bb804c7bb594b1%3A0x889f34dd239f5ac3!2sTorres%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.4304108!2d-59.127632399999996!4m5!1s0x95bc8069bb283a7d%3A0x1a2f3c30075d8b23!2sOpen%20Door%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.491119999999995!2d-59.0752241!4m5!1s0x95bc7d87a664c641%3A0x55098796c55322ae!2sLuj%C3%A1n%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.5633312!2d-59.1208805!4m5!1s0x95bb876536f1aab3%3A0x30d6d2338e215d95!2sCarlos%20Keen%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.486214499999996!2d-59.218906499999996!5e0!3m2!1ses!2sar!4v1713032813372!5m2!1ses!2sar"
+                    width="550"
+                    height="400"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <p class="volver"><a href="#presentacion">volver</a></p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article id="ruta-7">
+          <h3>SMAndes - Ruta de los siete Lagos</h3>
+          <div class="container-desrr">
+            <div class="galeria fot-lagos"></div>
+            <div class="container-info">
+              <div class="txt-info">
+                <div class="head-info">
+                  <div>
+                    <span
+                      ><i class="fa fa-calendar-o" aria-hidden="true"></i
+                      ><b>fecha:</b> 3 de febrero</span
+                    >
+                    <span
+                      ><i class="fa fa-hourglass" aria-hidden="true"></i
+                      ><b>duracion:</b> 5 dias</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      ><i class="fa fa-bicycle" aria-hidden="true"></i
+                      ><b>nivel:</b> medio</span
+                    >
+                    <span
+                      ><i class="fa fa-map" aria-hidden="true"></i
+                      ><b>distancia:</b> 182 Km</span
+                    >
+                  </div>
+                </div>
+                <div class="main-txt-info">
+                  <p>
+                    el Circuito de los 7 Lagos en San Martín de los Andes es un
+                    destino imprescindible para los amantes del ciclismo de
+                    montaña que buscan aventura, naturaleza y experiencias
+                    únicas en sus rutas y senderos. Con su espectacular paisaje
+                    natural, variedad de senderos, servicios y actividades, el
+                    Circuito de los 7 Lagos se ha convertido en un lugar
+                    emblemático para el MTB, invitando a los ciclistas de todo
+                    el mundo a descubrir, explorar y disfrutar de sus
+                    maravillosas rutas y paisajes en una experiencia inolvidable
+                    y emocionante.
+                  </p>
+                </div>
+                <div class="mapa-info">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d388451.7194310064!2d-71.86013022061104!3d-40.48015267583078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e1!4m5!1s0x96110e743605d0c7%3A0x71c43ffb1c66bc3a!2sSan%20Mart%C3%ADn%20de%20los%20Andes%2C%20Neuqu%C3%A9n!3m2!1d-40.157210299999996!2d-71.3524436!4m5!1s0x961111ec0e35e8d5%3A0x7f7945eb2dad92e3!2sCamping%20Catritre%2C%20Neuqu%C3%A9n!3m2!1d-40.173833099999996!2d-71.4010356!4m5!1s0x96110fea62dcd547%3A0x630b06215adfa986!2sMirador%20Pil%20Pil%2C%20Ruta%20Nacional%2040%2C%20Neuqu%C3%A9n!3m2!1d-40.213550999999995!2d-71.361794!4m5!1s0x96111c9025c24827%3A0x97b536f57a16f5a0!2sMirador%20Lago%20Mach%C3%B3nico%2C%20Ruta%20Nacional%2040%2C%20Neuqu%C3%A9n!3m2!1d-40.3324983!2d-71.4176274!4m5!1s0x9610e04658d27653%3A0x5435955a2142aa1e!2sMirador%20Lago%20Falkner%2C%20Ruta%20Nacional%2040%2C%20Neuqu%C3%A9n!3m2!1d-40.4429867!2d-71.53961389999999!4m5!1s0x9610bf42e48faa93%3A0x205ebc786470b636!2sVilla%20La%20Angostura%2C%20Neuqu%C3%A9n!3m2!1d-40.762742599999996!2d-71.6417984!4m5!1s0x9610be5b198682e3%3A0xd479ad4e7258e8a1!2sPuerto%20Manzano%2C%20Neuqu%C3%A9n!3m2!1d-40.805076199999995!2d-71.5951678!4m5!1s0x9610ed9bfc58e723%3A0xfe3980508076c886!2sVilla%20Traful%2C%20Neuqu%C3%A9n!3m2!1d-40.6536166!2d-71.39994879999999!5e0!3m2!1ses!2sar!4v1713034129205!5m2!1ses!2sar"
+                    width="550"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <p class="volver"><a href="#presentacion">volver</a></p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article id="ruta-4">
+          <h3>Pbcia Bs As - Parque Pereyra Iraola</h3>
+          <div class="container-desrr">
+            <div class="galeria fot-ira"></div>
+            <div class="container-info">
+              <div class="txt-info">
+                <div class="head-info">
+                  <div>
+                    <span
+                      ><i class="fa fa-calendar-o" aria-hidden="true"></i
+                      ><b>fecha:</b> 4 de octubre</span
+                    >
+                    <span
+                      ><i class="fa fa-hourglass" aria-hidden="true"></i
+                      ><b>duracion:</b> 1 dia</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      ><i class="fa fa-bicycle" aria-hidden="true"></i
+                      ><b>nivel:</b> principiante</span
+                    >
+                    <span
+                      ><i class="fa fa-map" aria-hidden="true"></i
+                      ><b>distancia:</b> 30 Km</span
+                    >
+                  </div>
+                </div>
+                <div class="main-txt-info">
+                  <p>
+                    o Este recorrido te llevará por el Parque Pereyra Iraola,
+                    una extensión de más de 10,000 hectáreas llena de accidentes
+                    naturales ideales para la práctica del ciclismo de montaña.
+                    La idea es reunir a los ciclistas en la Escuela de Policía
+                    Juan Vucetich y desde allí iniciar el recorrido. ¡Adrenalina
+                    y naturaleza en un solo lugar!
+                  </p>
+                </div>
+                <div class="mapa-info">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d26202.07000754836!2d-58.15821164703408!3d-34.82458628433365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e1!4m5!1s0x95a2d8053e06c501%3A0xfdb78511c095bb9e!2sParque%20Pereyra%20Iraola%2C%20Juan%20Mar%C3%ADa%20Guti%C3%A9rrez%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.843959!2d-58.180214199999995!4m5!1s0x95a2d8ed5ff2db5d%3A0xda80a3ed9708a128!2sEscuela%20de%20Polic%C3%ADa%20%22Juan%20Vucetich%22%2C%20Camino%20Parque%20Centenario%2C%20Pereyra%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.8353241!2d-58.124337399999995!4m5!1s0x95a2df345e8704ef%3A0xa46251952697ec13!2sPereyra!3m2!1d-34.835582599999995!2d-58.095181499999995!4m5!1s0x95a3276d1f3599c5%3A0x85b80d4cf266019!2sEscuela%20de%20Educaci%C3%B3n%20Primaria%20N%C2%BA11%20%22Nuestra%E2%80%A6!3m2!1d-34.8059428!2d-58.1288943!5e0!3m2!1ses!2sar!4v1713034733847!5m2!1ses!2sar"
+                    width="550"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <p class="volver"><a href="#presentacion">volver</a></p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article id="ruta-8">
+          <h3>Mendoza - San Rafael</h3>
+          <div class="container-desrr">
+            <div class="galeria fot-raf"></div>
+            <div class="container-info">
+              <div class="txt-info">
+                <div class="head-info">
+                  <div>
+                    <span
+                      ><i class="fa fa-calendar-o" aria-hidden="true"></i
+                      ><b>fecha:</b> 25 de marzo</span
+                    >
+                    <span
+                      ><i class="fa fa-hourglass" aria-hidden="true"></i
+                      ><b>duracion:</b> 5 dias</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      ><i class="fa fa-bicycle" aria-hidden="true"></i
+                      ><b>nivel:</b> medio</span
+                    >
+                    <span
+                      ><i class="fa fa-map" aria-hidden="true"></i
+                      ><b>distancia:</b> 82 Km</span
+                    >
+                  </div>
+                </div>
+                <div class="main-txt-info">
+                  <p>
+                    Ubicado en la provincia de Mendoza, San Rafael es un destino
+                    impresionante y emocionante para los aficionados al ciclismo
+                    de montaña (MTB) que buscan aventura, naturaleza y paisajes
+                    espectaculares en sus rutas y senderos. Con su diversidad de
+                    paisajes, desde montañas, valles y ríos hasta viñedos,
+                    olivares y oasis, San Rafael ofrece una experiencia única y
+                    enriquecedora para los ciclistas de montaña de todos los
+                    niveles y habilidades. . Por otro lado, los senderos de
+                    nivel avanzado brindan emocionantes descensos, subidas
+                    empinadas y terrenos variados, proporcionando un desafío y
+                    adrenalina para los ciclistas más experimentados y
+                    aventureros.
+                  </p>
+                </div>
+                <div class="mapa-info">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d209626.92429025294!2d-68.6809911135363!3d-34.82051377066856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e1!4m5!1s0x967907fdb13d06a7%3A0xe0fb2796d473309d!2sSan%20Rafael%2C%20Mendoza!3m2!1d-34.6128922!2d-68.3390622!4m5!1s0x96799c04325f4fbf%3A0xc57295a52467954c!2sRinc%C3%B3n%20del%20Atuel%2C%20Mendoza!3m2!1d-34.755249!2d-68.6288605!4m5!1s0x9679ed264c8e362f%3A0xbc515ccc6a31777b!2sEl%20Nihuil%2C%20Mendoza!3m2!1d-35.0287764!2d-68.6725891!4m5!1s0x967995000de4e58d%3A0x6817d46a643cf06d!2sRoca%20%22El%20astronauta%22!3m2!1d-34.970464!2d-68.611156!4m5!1s0x9679972eb80722a1%3A0xf9274e1a05b0808!2sJardines%20Colgantes!3m2!1d-34.878261!2d-68.552534!4m5!1s0x9679bd683f8f7881%3A0xdfa13148a0b79300!2sCa%C3%B1on%20del%20Atuel!3m2!1d-34.8462697!2d-68.51116259999999!4m5!1s0x9679a3408daa5bf9%3A0xef9886bb4be86326!2sBosque%20A%C3%A9reo%20EUCA%20Cerrado%20temporalmente!3m2!1d-34.7731005!2d-68.4301048!4m5!1s0x9679a7f702d8eb8f%3A0x1bbc490111c6b81!2sCaba%C3%B1as%20La%20Cata%20Mejor%20valorados!3m2!1d-34.6971785!2d-68.3784352!5e0!3m2!1ses!2sar!4v1713035348016!5m2!1ses!2sar"
+                    width="550"
+                    height="400"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <p class="volver"><a href="#presentacion">volver</a></p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
 
-    <footer>
-        FOOTER
+    <footer class="footer">
+      <section class="footer-items">
+        <ul class="datos">
+          <li>
+            <i class="fa-solid fa-envelope"></i><a>info@pedalear.com.ar</a>
+          </li>
+          <li><i class="fa-solid fa-phone"></i><a>54 9 11 3456 5844</a></li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i
+            ><a>Av. Directorio 5435, CABA, Argentina</a>
+          </li>
+        </ul>
+
+        <div class="redes-sociales">
+          <h3>SEGUINOS EN NUESTRAS REDES</h3>
+          <img
+            href="#"
+            src="./Static/img_inicio/Icono_whatsapp-01.png"
+            alt="Icono Whatsapp"
+          />
+          <img
+            href="#"
+            src="./Static/img_inicio/Icono_instagram-02.png"
+            alt="Icono Instagram"
+          />
+          <img
+            href="#"
+            src="./Static/img_inicio/icono_twitter-04.png"
+            alt="Icono Twitter"
+          />
+          <img
+            href="#"
+            src="./Static/img_inicio/icono_facebook-03.png"
+            alt="Icono Facebook"
+          />
+        </div>
+
+        <div class="logo-footer">
+          <img src="./Static/img_inicio/Logotipo.png" alt="Logotipo Pedalear" />
+        </div>
+      </section>
+
+      <p>
+        Copyright © 2024 Grupo1 - Curso Node Codo a Codo | Todos los derechos
+        reservados.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
