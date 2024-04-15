@@ -1,0 +1,325 @@
+/*Estilos generales*/
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #909193;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+
+/*Estilos de la barra de navegación*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    margin-top: 0;
+    z-index: 99;
+    background-color: #000;
+}
+
+.logo {
+    width: 50%;
+}
+
+nav ul li {
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: greenyellow;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f2f2f2;
+    transform: scale(1.2);
+}
+
+/*Estilos de las secciones*/
+.grid-container {
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    align-items: center;
+}
+
+
+.grid-container p {
+    padding: 15px;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.nosotros-img {
+    width: 60%;
+    margin: 10px auto;
+}
+
+.bg-color {
+    background-color: #fafafa;
+}
+
+.grid-2 {
+    color: #33355A;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.historia-img {
+    width: 100%;
+    margin-top: 0;
+}
+
+.equipo-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 1fr;
+}
+
+.equipo {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+}
+
+.equipo h2 {
+    font-size: 45px;
+}
+
+.equipo p {
+    width: 100%;
+}
+
+.tarjetas-grid {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.tarjetas-container {
+    background-color: transparent;
+    /* el fondo será completamente transparente y mostrará lo que haya detrás del contenedor.*/
+    width: 24%;
+    height: 600px;
+    perspective: 1000px;
+    /*
+        Define la perspectiva desde la cual se verán los elementos 3D dentro del contenedor. 
+        En este caso, se establece en 1000 píxeles, lo que significa que los elementos dentro del contenedor tendrán una perspectiva que simula estar a una distancia de 1000 píxeles del usuario.
+    */
+}
+
+.tarjeta {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    /*se animará durante 1 segundo, para dar un efecto de transición suave y gradual.*/
+    transform-style: preserve-3d;
+    /*se asegura de que los elementos hijos conserven sus posiciones y perspectivas 3D relativas al contenedor principal.*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tarjetas-container:hover .tarjeta {
+    transform: rotateY(180deg);
+    /*para voltear el elemento como si fuera una tarjeta, haciendo que la parte frontal del elemento sea invisible y la parte posterior sea visible.*/
+}
+
+.frente,
+.dorso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /*asegura de que la parte trasera del elemento no sea visible cuando el elemento esté rotado*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    /* font-size: 5em; */
+}
+
+.dorso {
+    justify-content: center;
+}
+
+.frente {
+    background-color: #000;
+    color: greenyellow;
+}
+
+.dorso {
+    background-color: greenyellow;
+    color: #000;
+    transform: rotateY(180deg);
+}
+
+.frente img {
+    border-radius: 50%;
+    width: 90%;
+    object-fit: fill;
+    margin-top: 1rem;
+}
+
+.frente h3,
+.dorso h3 {
+    font-size: 3rem;
+    padding: 0;
+}
+
+.frente p {
+    font-size: 25px;
+    padding: 0 10px;
+    margin-top: 5px;
+    color: greenyellow;
+    margin-bottom: 20px;
+}
+
+.dorso p {
+    font-size: 18px;
+    padding: 0 10px;
+    margin-top: 5px;
+    color: #000;
+}
+
+.bg-color:nth-child(2) {
+    background-color: #fff;
+}
+.carta {
+    /* width: 45%;
+    margin-left: 5%; */
+    grid-column: 1;
+    padding: 20px;
+    background-image: url("https://img.freepik.com/fotos-premium/hoja-blanco-papel-blanco-fondo-lienzo-papel-claro_84485-1934.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-style: oblique;
+    box-shadow: 5px 5px 5px #909193;
+}
+
+.form {
+    /* align-self: flex-start;
+    margin-top: 150px;
+    margin-right: 0;
+    margin-bottom: 10px;*/
+    margin: auto;
+    text-align: center;
+    width: 50%; 
+    grid-column: 2;
+}
+
+.form h2,
+.form P {
+    font-size: 40px;
+    color: greenyellow;
+    font-weight: bold;
+}
+
+.form p {
+    font-size: 18px;
+    color: #909193;
+}
+
+.form img {
+    width: 100%;
+    margin-right: 10px;
+    margin-top: 35px;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.mail {
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #909193;
+    color: #909193;
+}
+
+.btn {
+    background-color: greenyellow;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #909193;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+footer {
+    position: absolute; 
+    margin-bottom: 0;
+    margin-top: auto;
+    margin-left: 0;
+    height: 110px;
+    width: 100%;
+    background-color: #000;
+    align-self: flex-end;
+    padding: 30px 0px;
+    text-align: center;
+} 
+
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: greenyellow;
+    font-size: 0.8em;
+}
+
+.footer .row a,
+nav ul li a {
+    text-decoration: none;
+    color: greenyellow;
+    transition: 0.3s;
+}
+
+.footer .row a:hover,
+nav ul li a:hover {
+    color: #fff;
+}
+
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
