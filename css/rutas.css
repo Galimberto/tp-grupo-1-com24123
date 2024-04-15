@@ -1,0 +1,249 @@
+/********** estilos generales ******************/
+
+/* body{
+    background-color: antiquewhite;
+    
+} */
+ 
+/* header{
+    height: 10vh;   
+    margin-bottom: 10px;
+    background-color: orange;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}  
+.logo{
+    width: 300px;
+    height: 8vh;
+    background-image: url(/static/img-rutas/logo.png);
+    background-size: cover;
+    margin-left: 20px;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+}
+nav ul a{
+    text-decoration: none;
+    color: white
+}
+nav ul li{
+    margin-right: 20px;
+    background-color: tomato;
+    padding: 5px;
+    border-radius: 10%;
+} */
+
+
+/******************** ESTILOS Seccion rutas ***************/
+
+/* estilos del section-banner */
+.container-main{
+    width: 90vw;
+    max-width: 1200px;
+    margin: 15px auto;
+} 
+.img-banner{
+    width: 80%;
+    height: 87vh;
+    background-image: url(/static/img-rutas/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    
+}
+.rutas-banner p:nth-child(1){
+    position: absolute;
+    top:5%;
+    left: 15%;
+    color: seashell;
+    z-index: 5;
+    font-size: 4rem;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.9);
+}
+.rutas-banner p:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    color: seashell;
+    z-index: 5;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 4px rgba(0,0,0,1);
+    
+}
+.rutas-banner {
+    position: relative;
+    
+}
+.rutas-banner p:nth-child(3) a{
+    text-decoration: none;
+}
+
+/************ estilos de rutas-presentacion ***********/
+
+.rutas-presentacion{
+    margin-top: 15px;
+    margin-bottom: 40px;    
+}
+.rutas-presentacion h1{
+    text-align: center;
+    font-size: 3rem;
+    color: chocolate;
+
+}
+.rutas-presentacion .rutas{
+    margin: 15px auto;
+}
+.rutas-presentacion .rutas h2{
+    padding-left: 15%;
+    color: chocolate;
+    font-size: 2rem;
+}
+.rutas-presentacion .rutas .container-img{
+    display: flex; 
+    /* border: 1px solid red; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.rutas-presentacion .slider{
+    width: 250px;
+    /* border: 1px solid black; */
+}
+.rutas-presentacion .rutas p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #ffa500;
+    color: seashell;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.9);
+    margin: 0;
+    padding: 10px 0;
+}
+.slider-res{
+    width: 250px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+.container-img .slider .slider-ruta-1{
+    background-image: url('/static/img-rutas/foto1.jpg');
+} 
+.container-img .slider .slider-ruta-2{   
+    background-image: url('/static/img-rutas/foto3.JPG');   
+} 
+.container-img .slider .slider-ruta-3{
+    background-image: url('/static/img-rutas/foto5.JPG');
+} 
+.container-img .slider .slider-ruta-4{
+    background-image: url('/static/img-rutas/foto7.JPG');
+} 
+.container-img .slider .slider-ruta-5{
+    background-image: url('/static/img-rutas/foto2.JPG');
+} 
+.container-img .slider .slider-ruta-6{
+    background-image: url('/static/img-rutas/foto4.jpg');
+} 
+.container-img .slider .slider-ruta-7{
+    background-image: url('/static/img-rutas/foto6.JPG');
+} 
+.container-img .slider .slider-ruta-8{
+    background-image: url('/static/img-rutas/foto8.JPG');
+}
+.rutas-footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.rutas-footer p{
+    font-size: 1.5rem;
+}
+.rutas-footer a{
+    text-decoration: none;
+    color:seashell;
+    font-weight: bolder;
+    padding: 5px 8px;
+    background-color: tomato;
+    border-radius: 25px;
+}
+.rutas-footer p span{
+    color: tomato;
+    font-weight: 800;
+    font-size: 1.5rem;
+} 
+
+/************ estilos de rutas-desarrollo ***********/
+.rutas-desarrollo article{
+    margin: 25px auto;
+}
+
+.rutas-desarrollo h3{
+    text-align: center;
+    font-size: 2.3rem;
+    color: chocolate;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+   
+}
+.rutas-desarrollo .container-desrr{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.rutas-desarrollo .txt-info{
+    width: 550px;
+    padding-left: 20px;
+}
+.rutas-desarrollo .container-info i{
+    margin-right: 6px;
+}
+.rutas-desarrollo .txt-info p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.rutas-desarrollo .galeria{
+    width: 640px;
+    height: 480px;    
+    background-size: cover;
+    background-position: center;
+}
+.rutas-desarrollo .fot-vent{
+    background-image: url('/static/img-rutas/galeria_ventana1.jpg');   
+}
+.rutas-desarrollo .fot-tala{
+    background-image: url('/static/img-rutas/talampaya.jpg');   
+}
+.rutas-desarrollo .fot-ota{
+    background-image: url('/static/img-rutas/otamendi.jpg');   
+}
+.rutas-desarrollo .fot-pal{
+    background-image: url('/static/img-rutas/palmar.jpg');   
+}
+.rutas-desarrollo .fot-keen{
+    background-image: url('/static/img-rutas/keen.jpg');   
+}
+.rutas-desarrollo .fot-lagos{
+    background-image: url('/static/img-rutas/smandes.jpg');   
+}
+.rutas-desarrollo .fot-ira{
+    background-image: url('/static/img-rutas/Iraola.jpg');   
+}
+.rutas-desarrollo .fot-raf{
+    background-image: url('/static/img-rutas/SanRafael.jpg');   
+}
+.rutas-desarrollo .txt-info a{
+    text-decoration: none;
+    color: seashell;
+    background-color: tomato;
+    padding: 4px 8px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.rutas-desarrollo .volver{
+    text-align: right;
+}
