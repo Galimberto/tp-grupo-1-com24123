@@ -12,7 +12,8 @@ h2 {
     margin: 0;
     padding: 0;
     text-align: center;
-    color: #909193;
+    /* color: #909193; */
+    color: #7BD009;
 }
 
 h1 {
@@ -41,7 +42,7 @@ html body{
 
 body{
     min-height: 100vh;
-    background-color: beige;
+    background-color: #fafafa;
     
 }
 
@@ -189,7 +190,7 @@ nav ul li a:hover {
 }
 
 .bg-color {
-    background-color: #fafafa;
+    background-color: beige;
 }
 
 .grid-2 {
