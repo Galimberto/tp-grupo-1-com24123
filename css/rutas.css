@@ -1,45 +1,8 @@
 /********** estilos generales ******************/
 
-/* body{
-    background-color: antiquewhite;
-    
-} */
- 
-/* header{
-    height: 10vh;   
-    margin-bottom: 10px;
-    background-color: orange;
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}  
-.logo{
-    width: 300px;
-    height: 8vh;
-    background-image: url(/static/img-rutas/logo.png);
-    background-size: cover;
-    margin-left: 20px;
+@import url('/css/index.css'); 
 
-}
-nav ul{
-    list-style: none;
-    display: flex;
-    margin-left: 0;
-}
-nav ul a{
-    text-decoration: none;
-    color: white
-}
-nav ul li{
-    margin-right: 20px;
-    background-color: tomato;
-    padding: 5px;
-    border-radius: 10%;
-} */
-
+/* Importo el index para traerme los estilos de header y footer*/
 
 /******************** ESTILOS Seccion rutas ***************/
 
