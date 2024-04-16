@@ -1,6 +1,6 @@
 /********** estilos generales ******************/
 
-@import url('/css/index.css'); 
+@import url('../css/index.css'); 
 
 /* Importo el index para traerme los estilos de header y footer*/
 
