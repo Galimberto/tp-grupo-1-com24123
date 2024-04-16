@@ -1,33 +1,10 @@
 /*Estilos generales*/
-/* html, body{
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    margin: 0 auto;
-    
-} */
-
-h1,
-h2 {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    /* color: #909193; */
-    color: #7BD009;
-}
-
-h1 {
-    font-size: 45px;
-}
-
-/* ________________________________________ */
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Nunito Sans", sans-serif;
-    /*text-align: center;*/
 }
 
 html body{
@@ -46,45 +23,23 @@ body{
     
 }
 
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #7BD009;
+}
 
+h1 {
+    font-size: 45px;
+}
 
 
 
 
 /*Estilos de la barra de navegación*/
-/* nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-    position: fixed;
-    margin: 0 auto;
-    z-index: 99;
-    background-color: #000;
-}
 
-.logo {
-    width: 50%;
-}
-
-nav ul li {
-    display: inline-flex;
-    list-style-type: none;
-    justify-content: space-between;
-    padding: 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: greenyellow;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #f2f2f2;
-    transform: scale(1.2);
-} */
 .header{    
     background-color: rgb(1, 1, 1);
     width: 100%;
@@ -166,16 +121,18 @@ nav ul li a:hover {
 }
 
 /*Estilos de las secciones*/
-.grid-container {
+.container {
     /* height: 100vh; */
     width: 90%;
     margin: auto;
-    display: grid;
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 
-.grid-container p {
+.container p {
     padding: 15px;
     width: 75%;
     margin: 0 auto;
@@ -193,29 +150,23 @@ nav ul li a:hover {
     background-color: beige;
 }
 
-.grid-2 {
+.bg-color p {
+    text-align: justify;
+}
+
+.container-2 {
     margin: 50px auto;
     color: #33355A;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     gap: 15px;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: row;
 }
 
 .historia-img {
     width: 100%;
     margin-top: 0;
-}
-
-.equipo-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.5fr 1fr;
-}
-
-.equipo {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row: 1;
 }
 
 .equipo h2 {
@@ -226,10 +177,7 @@ nav ul li a:hover {
     width: 100%;
 }
 
-.tarjetas-grid {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row: 2;
+.seccion-tarjetas {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -283,16 +231,13 @@ nav ul li a:hover {
     /* font-size: 5em; */
 }
 
-.dorso {
-    justify-content: center;
-}
-
 .frente {
     background-color: #000;
     color: greenyellow;
 }
 
 .dorso {
+    justify-content: center;
     background-color: greenyellow;
     color: #000;
     transform: rotateY(180deg);
@@ -305,8 +250,7 @@ nav ul li a:hover {
     margin-top: 1rem;
 }
 
-.frente h3,
-.dorso h3 {
+.frente h3 {
     font-size: 3rem;
     padding: 0;
 }
@@ -319,6 +263,9 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.dorso h3 {
+    font-size: 25px;
+}
 .dorso p {
     font-size: 18px;
     padding: 0 10px;
@@ -330,8 +277,7 @@ nav ul li a:hover {
     background-color: #fff;
 }
 .carta {
-    /* width: 45%;
-    margin-left: 5%; */
+    width: 50%;
     grid-column: 1;
     padding: 20px;
     background-image: url("https://img.freepik.com/fotos-premium/hoja-blanco-papel-blanco-fondo-lienzo-papel-claro_84485-1934.jpg");
@@ -343,30 +289,32 @@ nav ul li a:hover {
 }
 
 .form {
-    /* align-self: flex-start;
-    margin-top: 150px;
-    margin-right: 0;
-    margin-bottom: 10px;*/
     margin: auto;
-    text-align: center;
     width: 50%; 
-    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.form h2,
-.form P {
+.form-derecha h2,
+.form-derecha P {
     font-size: 40px;
     color: greenyellow;
     font-weight: bold;
 }
 
-.form p {
+.form-derecha form {
+    text-align: center;
+}
+
+.form-derecha p {
     font-size: 18px;
     color: #909193;
 }
 
 .form img {
-    width: 100%;
+    width: 50%;
     margin-right: 10px;
     margin-top: 35px;
     justify-self: flex-end;
@@ -394,46 +342,6 @@ nav ul li a:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-
-/* footer {
-    position: absolute; 
-    margin-bottom: 0;
-    margin-top: auto;
-    margin-left: 0;
-    height: 110px;
-    width: 100%;
-    background-color: #000;
-    align-self: flex-end;
-    padding: 30px 0px;
-    text-align: center;
-} 
-
-
-.footer .row {
-    width: 100%;
-    margin: 1% 0%;
-    padding: 0.6% 0%;
-    color: greenyellow;
-    font-size: 0.8em;
-}
-
-.footer .row a,
-nav ul li a {
-    text-decoration: none;
-    color: greenyellow;
-    transition: 0.3s;
-}
-
-.footer .row a:hover,
-nav ul li a:hover {
-    color: #fff;
-}
-
-
-.footer .row a i {
-    font-size: 2em;
-    margin: 0% 1%;
-} */
 
 .footer{
     display: flex;
@@ -531,3 +439,126 @@ img {
 .header, .footer, .section {
     width: 100%; /* Asegura que los elementos no sobresalgan del viewport */
 }
+
+
+/* __MEDIA QUERIES___ */
+
+
+
+@media only screen and (max-width: 950px) {
+    .container-2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .historia-img {
+        width: 50%;
+    }
+
+    .seccion-tarjetas {
+        flex-direction: column;
+        margin: 15px auto;
+    }
+
+    .tarjetas-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .frente {
+        background-color: transparent;
+    }
+    .frente p {
+        display: none;
+    }
+
+    .frente img {
+        width: 60%;
+    }
+
+    .dorso {
+        padding: 5px;
+        margin: 0;
+    }
+    .dorso p {
+        text-align: justify;
+        font-size: 22px;
+    }
+
+    .carta {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form img {
+        width: 25%;
+    }
+}
+@media only screen and (min-width: 951px) and (max-width: 1280px){
+    .container-2 {
+        flex-direction: column;
+    }
+
+    .historia-img {
+        width: 50%;
+    }
+
+    .tarjetas-container {
+        height: 500px;
+            width: 50%;
+            margin: 20px auto;
+        
+    }
+
+    .frente {
+        background-color: transparent;
+    }
+    .frente p {
+        display: none;
+    }
+
+    .frente img {
+        width: 60%;
+    }
+    .dorso {
+        padding: 5px;
+        margin: 0;
+    }
+    .dorso p {
+        text-align: justify;
+    }
+    .dorso h3 {
+        /* display: none; */
+        font-size: 22px;
+    }
+
+    .dorso p {
+        font-size: 20px;
+    }
+
+    .carta {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .form img {
+        width: 25%;
+    }
+    .seccion-tarjetas {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
