@@ -441,7 +441,7 @@ img {
 
 /* __MEDIA QUERIES___ */
 
-@media only screen and (max-width: 441px) {
+@media only screen and (max-width: 450px) {
     h1 {
         font-size: 30px;
     }
@@ -466,8 +466,8 @@ img {
     }
 
     .tarjetas-container {
-        width: 50%;
-        height: 250px;
+        width: 100%;
+        height: 300px;
         margin: 5px auto;
     }
 
@@ -480,7 +480,7 @@ img {
     }
 
     .frente img {
-        width: 90%;
+        width: 75%;
         border-radius: 5%;
     }
 
@@ -490,11 +490,11 @@ img {
     }
 
     .dorso h3 {
-        font-size: 18px;
+        display: none;
     }
     .dorso p {
         text-align: justify;
-        font-size: 16px;
+        font-size: 14px;
     }
     .container-2 {
         width: 100%;
@@ -528,7 +528,7 @@ img {
     }
 }
 
-@media only screen and (min-width:442px) and (max-width: 649px) {
+@media only screen and (min-width: 451px) and (max-width: 649px) {
     
 
     h1 {
@@ -555,7 +555,7 @@ img {
     }
     .tarjetas-container {
         width: 100%;
-        height: 500px;
+        height: 400px;
         margin: 5px auto;
     }
 
@@ -567,7 +567,7 @@ img {
     }
 
     .frente img {
-        width: 80%;
+        width: 70%;
         border-radius: 35%;
     } 
 
@@ -577,12 +577,12 @@ img {
     }
 
     .dorso h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .dorso p {
         text-align: justify;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .container-2 {
@@ -639,7 +639,7 @@ img {
     }
 
     .tarjetas-container {
-        height: 500px;
+        height: 450px;
             width: 50%;
             margin: 20px auto;
         
@@ -653,7 +653,8 @@ img {
     }
 
     .frente img {
-        width: 90%;
+        width: 80%;
+        border-radius: 5%;
     }
     .dorso {
         padding: 5px;
@@ -663,12 +664,12 @@ img {
         text-align: justify;
     }
     .dorso h3 {
-        /* display: none; */
-        font-size: 22px;
+        display: none;
+        
     }
 
     .dorso p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .carta {
