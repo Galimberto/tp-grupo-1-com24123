@@ -113,14 +113,14 @@ legend{
     text-align: center;
     border: 2px solid rgb(1, 1, 1);
     padding: 2px;
-    color: #7BD009;
-    background-color: rgb(1, 1, 1);
+    color: beige;
+    background-color: #7BD009;
     border-radius: 3px;
 }
 
 fieldset{
     margin: 20px 0;
-    border: 1px solid rgb(1, 1, 1);
+    border: 2px solid rgb(1, 1, 1);
     border-radius: 5px;
 }
 
@@ -128,10 +128,12 @@ fieldset{
     height: 60vh;
     margin-top: 40px;
 }
+
 .container{
     display: flex;
     flex-direction: column;
     width: 20vw;
+    padding: 0 6px;
 }
 
 input, textarea{
@@ -139,12 +141,43 @@ input, textarea{
     box-sizing: border-box;
     padding: 6px 8px;
     border: none;
-    border: 1px solid #666;
+    border: 2px solid #7BD009;
     box-shadow:  0 0 15 #0003;
     background-color: transparent;
     border-radius: 4px;
-    color: #ddd;
+    outline: none;
 }
+
+input{
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
+
+input:focus, textarea:focus{
+    /*border: none;*/
+    background-color: #b0f853;
+}
+
+input:focus::placeholder, textarea:focus::placeholder{
+    visibility: hidden;
+}
+
+label{
+    margin: 0 6px;
+}
+
+textarea{
+    min-width: 100%;
+    resize: none;
+    min-height: 100px;
+    max-width: 200px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+textarea:not(:focus) {
+    background-color: transparent; /* Fondo blanco cuando no está enfocado */
+  }
 
 .button{
     margin-top: 5px;
