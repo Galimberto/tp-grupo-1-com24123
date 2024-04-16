@@ -110,7 +110,11 @@ body{
 
 /*-------------------MAIN-------------------*/
 
-
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
 
 
 /*-------------------FOOTER-------------------*/

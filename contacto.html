@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <title>Pagina Inicio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
 
 <body>
@@ -27,9 +27,24 @@
 
     </header>
 
-    <main>
+    <main class="form-container">
+        <fieldset>
+            <legend>Contacto</legend>
+            <form class="container">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre...">
+                
+                <label for="mail">Email</label>
+                <input type="mail" name="mail" id="mail" placeholder="Ingrese su correo electronico...">
+                
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" rows="10" placeholder="Escriba su mensaje..."></textarea>
+                
+            </form>    
+        </fieldset>
         
     </main>
+
     <footer class="footer">
 
         <section class="footer-items">
