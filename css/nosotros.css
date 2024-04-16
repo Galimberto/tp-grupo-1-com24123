@@ -32,11 +32,11 @@ h2 {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 50px;
 }
-
-
-
+h2 {
+    font-size: 40px;
+}
 
 /*Estilos de la barra de navegación*/
 
@@ -276,9 +276,9 @@ h1 {
 .bg-color:nth-child(2) {
     background-color: #fff;
 }
+
 .carta {
     width: 50%;
-    grid-column: 1;
     padding: 20px;
     background-image: url("https://img.freepik.com/fotos-premium/hoja-blanco-papel-blanco-fondo-lienzo-papel-claro_84485-1934.jpg");
     background-repeat: no-repeat;
@@ -410,7 +410,6 @@ h1 {
     flex: 1 1 30%;
  }
 
- 
  .logo-footer img {
     max-width: 70%; /* Asegura que la imagen nunca sea más ancha que su contenedor */
     height: auto; /* Mantiene la proporción de la imagen ajustando automáticamente su altura */
@@ -429,7 +428,6 @@ h1 {
      
     
 }
-/*----------------MEDIA QUERIES-----------------*/
 
 img {
     max-width: 100%; /* Hace que las imágenes sean responsivas */
@@ -443,9 +441,16 @@ img {
 
 /* __MEDIA QUERIES___ */
 
-
-
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 441px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px
+    }
     .container-2 {
         flex-direction: column;
         padding: 20px;
@@ -457,36 +462,58 @@ img {
 
     .seccion-tarjetas {
         flex-direction: column;
-        margin: 15px auto;
+        /* margin: 5px auto; */
     }
 
     .tarjetas-container {
-        width: 90%;
-        margin: 20px auto;
+        width: 50%;
+        height: 250px;
+        margin: 5px auto;
     }
 
     .frente {
         background-color: transparent;
     }
-    .frente p {
+
+    .frente h3, .frente p {
         display: none;
     }
 
     .frente img {
-        width: 60%;
+        width: 90%;
+        border-radius: 5%;
     }
 
     .dorso {
         padding: 5px;
         margin: 0;
     }
+
+    .dorso h3 {
+        font-size: 18px;
+    }
     .dorso p {
         text-align: justify;
-        font-size: 22px;
+        font-size: 16px;
+    }
+    .container-2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container p {
+        width: 95%;
     }
 
     .carta {
-        width: 90%;
+        width: 100%;
+        background-image: none;
+        padding: 0px;
+        box-shadow: none;
+        font-size: 14px;
+        margin: 10px;
+        box-sizing: border-box;
+        text-align: center;
     }
 
     .form {
@@ -500,7 +527,109 @@ img {
         width: 25%;
     }
 }
-@media only screen and (min-width: 951px) and (max-width: 1280px){
+
+@media only screen and (min-width:442px) and (max-width: 649px) {
+    
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .container-2 {
+        flex-direction: column;
+    }
+
+    .historia-img {
+        width: 50%;
+    }
+    .seccion-tarjetas {
+        flex-direction: column;
+    }
+    .tarjetas-container {
+        width: 100%;
+        height: 500px;
+        margin: 5px auto;
+    }
+
+    .frente {
+        background-color: transparent;
+    }
+    .frente h3, .frente p {
+        display: none;
+    }
+
+    .frente img {
+        width: 80%;
+        border-radius: 35%;
+    } 
+
+    .dorso {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .dorso h3 {
+        font-size: 18px;
+    }
+
+    .dorso p {
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .container-2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container p {
+        width: 95%;
+    }
+
+    .carta {
+        width: 100%;
+        background-image: none;
+        padding: 0px;
+        box-shadow: none;
+        font-size: 14px;
+        margin: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .form {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form img {
+        width: 25%;
+    }
+
+}
+@media only screen and (min-width: 650px) and (max-width: 1280px){
+    h1 {
+        font-size: 45px;
+    }
+    
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
     .container-2 {
         flex-direction: column;
     }
@@ -519,12 +648,12 @@ img {
     .frente {
         background-color: transparent;
     }
-    .frente p {
+    .frente h3, .frente p {
         display: none;
     }
 
     .frente img {
-        width: 60%;
+        width: 90%;
     }
     .dorso {
         padding: 5px;
