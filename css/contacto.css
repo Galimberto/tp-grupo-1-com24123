@@ -114,11 +114,13 @@ legend{
     border: 2px solid rgb(1, 1, 1);
     padding: 2px;
     color: #7BD009;
+    background-color: rgb(1, 1, 1);
+    border-radius: 3px;
 }
 
 fieldset{
-    border: 2px solid rgb(1, 1, 1);
-    padding: 2px;
+    margin: 20px 0;
+    border: 1px solid rgb(1, 1, 1);
     border-radius: 5px;
 }
 
@@ -132,7 +134,27 @@ fieldset{
     width: 20vw;
 }
 
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: none;
+    border: 1px solid #666;
+    box-shadow:  0 0 15 #0003;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #ddd;
+}
 
+.button{
+    margin-top: 5px;
+    background-color: #7BD009;
+    color: beige;
+    border-radius: 5px;
+    width: 60%;
+    height: 30px;
+    align-self: center;
+}
 
 
 
