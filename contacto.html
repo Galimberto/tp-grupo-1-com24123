@@ -29,17 +29,18 @@
 
     <main class="form-container">
         <fieldset>
-            <legend>Contacto</legend>
+            <legend>Datos</legend>
             <form class="container">
                 <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" placeholder="Ingrese su nombre...">
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre..." minlength="3" required>
                 
                 <label for="mail">Email</label>
-                <input type="mail" name="mail" id="mail" placeholder="Ingrese su correo electronico...">
+                <input type="mail" name="mail" id="mail" placeholder="Ingrese su correo electronico..." required>
                 
                 <label for="message">Mensaje</label>
-                <textarea name="message" id="message" rows="10" placeholder="Escriba su mensaje..."></textarea>
+                <textarea name="message" id="message" rows="10" placeholder="Escriba su mensaje..." minlength="3" maxlength="100" required></textarea>
                 
+                <input type="submit" value="Enviar">
             </form>    
         </fieldset>
         
