@@ -11,8 +11,12 @@
     width: 90vw;
     max-width: 1200px;
     margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 } 
 .img-banner{
+    display: flex;
     width: 80%;
     height: 87vh;
     background-image: url('../static/img-rutas/banner.jpg');
@@ -32,7 +36,7 @@
 }
 .rutas-banner p:nth-child(3){
     position: absolute;
-    bottom: 0;
+    bottom: 3%;
     right: 15%;
     color: seashell;
     z-index: 5;
@@ -41,6 +45,9 @@
     
 }
 .rutas-banner {
+    display: flex;
+    padding: 10px;
+
     position: relative;
     
 }
@@ -124,7 +131,7 @@
     flex-wrap: wrap;
 }
 .rutas-footer p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .rutas-footer a{
     text-decoration: none;
@@ -137,12 +144,14 @@
 .rutas-footer p span{
     color: tomato;
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 } 
 
 /************ estilos de rutas-desarrollo ***********/
 .rutas-desarrollo article{
     margin: 25px auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .rutas-desarrollo h3{
@@ -154,12 +163,18 @@
 }
 .rutas-desarrollo .container-desrr{
     display: flex;
-    align-items: center;
-    /* flex-wrap: wrap; */
+    align-items: center;  
+}
+
+.rutas-desarrollo .container-info{
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
 }
 .rutas-desarrollo .txt-info{
     width: 550px;
     padding-left: 20px;
+    
 }
 .rutas-desarrollo .container-info i{
     margin-right: 6px;
@@ -170,7 +185,7 @@
     text-align: justify;
 }
 .rutas-desarrollo .galeria{
-    width: 640px;
+    width: 540px;
     height: 480px;    
     background-size: cover;
     background-position: center;
@@ -209,4 +224,67 @@
 }
 .rutas-desarrollo .volver{
     text-align: right;
+}
+
+/************* media query ***************/
+@media only screen and (max-width: 600px){
+    .container-main{
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    
+    .rutas-banner p:nth-child(1){
+        font-size: 1.42rem;
+        top: 10%;
+    }
+    .rutas-banner p:nth-child(3){
+        font-size: 1rem;
+        bottom: 5%;
+        left: 15%;
+    }
+    .img-banner{
+       display: flex;
+       flex-wrap: wrap;
+        height: 37vh;
+    }
+   .container-desrr{
+        flex-wrap: wrap;
+   }
+   .rutas-desarrollo h3{
+    font-size: 1.5rem;
+   }
+   .rutas-footer p span, .rutas-footer p{
+    font-size: 1rem;
+   }
+
+.rutas-desarrollo .container-info{
+    padding: 5px;
+    
+}
+/* .rutas-desarrollo .mapa-info{
+    display: none;
+} */
+
+}
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px){
+
+    .img-banner{
+        
+        height: 50vh;
+    }
+    .rutas-banner p:nth-child(1){
+        font-size: 2.52rem;
+        top: 10%;
+    }
+    .rutas-banner p:nth-child(3){
+        font-size: 1.5rem;
+        bottom: 5%;
+        left: 15%;
+    }
+    .container-desrr{
+        flex-wrap: wrap;
+   }
 }
