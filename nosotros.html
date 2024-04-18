@@ -1,237 +1,195 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/nosotros.css">
-    <!--FONT AWESOME-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Sobre nosotros</title>
 </head>
 <body>
-    <!--Sección de la barra de navegación-->
-    
-            <header class="header">
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./Static/img_inicio/Logotipo.png" alt="Logotipo Pedalear">
+            </div>
 
-                <div class="logo">
-                    <img src="./Static/img_inicio/Logotipo.png" alt="Logotipo Pedalear">
-                </div>
-        
-                <nav class="nav">
-                    <ul class="nav links">
-                        <li><a href="index.html">INICIO</a></li>
-                        <li><a href="rutas.html">RUTAS</a></li>
-                        <li><a href="nosotros.html">NOSOTROS</a></li>
-                        <li><a href="contacto.html">CONTACTO</a></li>
-                    </ul>
-                </nav>
-        
-            </header>
-        
-        
-        <div class="container">
-            <h1>Conoce Nuestra Historia</h1>
-            <h2>Descubre quiénes somos y cómo comenzó nuestra aventura </h2>
+            <label for="menu-hamburguesa" class="label-hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="list-icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </label>
+            
+            <input class="menu-hamburguesa" type="checkbox" id="menu-hamburguesa">
+            <ul class="navbar links">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="rutas.html">RUTAS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <section class="seccion-equipo">
+        <h1><span class="titulo">Conoce Nuestra Historia</span></h1>
+        <h2><span class="subtitulo">Descubre quiénes somos y cómo comenzó nuestra aventura</span></h2>
+        <p>¡Bienvenidos a nuestro rincón cicloturista! Somos un equipo diverso, unidos por la pasión compartida hacia el cicloturismo y la exploración de los magníficos paisajes argentinos en bicicleta. Cada uno aporta una perspectiva única, desde el entusiasta de la naturaleza hasta el amante de la historia, formando un grupo lleno de energía y diversidad.</p>
+        <div class="imgPrincipal">
+            <img src="./static/img-nosotros/imgPrincipal.png" alt="">
+        </div>
+        <h2 class="el-equipo">EL EQUIPO DE <b>Pedale<span class="verde">AR</span></b></h2>
+        <div class="equipo-grid">
+          <div class="miembro-equipo">
+            <img src="./static/img-nosotros/miembro1.jpg" alt="Miembro 1">
+            <div class="info-miembro">
+              <h4>Ángel</h4>
+              <p>Desde joven, ha tenido una profunda pasión por el ciclismo y la exploración de los paisajes argentinos. Su amor por la aventura lo llevó a reunir a un grupo de amigos con intereses similares para formar este emocionante proyecto cicloturista.</p>
+              <h5>Rol en el Equipo</h5>
+              <p>Ángel es el líder inspirador del grupo. Su entusiasmo contagioso y su dedicación son el motor que impulsa a todos a seguir explorando y descubriendo nuevos destinos en bicicleta.</p>
+            </div>
+          </div>
+          
+          <div class="miembro-equipo">
+            <img src="./static/img-nosotros/miembro3.jpg" alt="Miembro 1">
+            <div class="info-miembro">
+              <h4>Ximena</h4>
+              <p>Ella es una amante de la naturaleza y la fotografía. Desde pequeña, ha disfrutado explorando los rincones más remotos de Argentina con su cámara en mano. Su habilidad para capturar la esencia de los paisajes la convierte en una parte invaluable del equipo.</p>
+              <h5>Rol en el Equipo</h5>
+              <p>Xime es la encargada de documentar visualmente cada viaje y experiencia. Sus fotografías no solo son impresionantes, sino que también transmiten la emoción y la belleza de cada lugar que visitan.</p>
+            </div>
+          </div>
+
+          <div class="miembro-equipo">
+            <img src="./static/img-nosotros/miembro2.jpg" alt="Miembro 1">
+            <div class="info-miembro">
+              <h4>Mauro</h5>
+              <p>El historiador del equipo, es un apasionado por la cultura. Con un profundo amor por la historia y las tradiciones argentinas, se destaca por su conocimiento enciclopédico sobre cada rincón y cada aspecto cultural que encuentran en sus viajes en bicicleta</p>
+              <h5>Rol en el Equipo</h5>
+              <p>Su conocimiento profundo de la historia argentina agrega una dimensión única a cada viaje, permitiendo a todos sumergirse en las tradiciones y el patrimonio cultural del país.</p>
+            </div>
+          </div>
+
+          <div class="miembro-equipo">
+            <img src="./static/img-nosotros/miembro4.jpg" alt="Miembro 1">
+            <div class="info-miembro">
+              <h4>Jazmín</h4>
+              <p>Con un espíritu inquieto y una curiosidad insaciable, siempre ha buscado nuevas experiencias culinarias que reflejen a su país. Dentro del equipo combina su amor por la gastronomía con su deseo de explorar los rincones más remotos de Argentina sobre dos ruedas.</p>
+              <h5>Rol en el Equipo</h5>
+              <p>Jazmín es la encargada de satisfacer los paladares del grupo durante cada viaje. Su conocimiento de la gastronomía local garantiza que cada parada sea una experiencia culinaria memorable.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <div class="pestañas">
+        <!-- TABS -->
+        <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="historia-tab" data-bs-toggle="tab" data-bs-target="#historia" type="button" role="tab" aria-controls="historia" aria-selected="true">Nuestra Historia</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab" aria-controls="vision" aria-selected="false">Nuestra Visión</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="mision-tab" data-bs-toggle="tab" data-bs-target="#mision" type="button" role="tab" aria-controls="mision" aria-selected="false">Nuestra Misión</button>
+            </li>
+        </ul>
+        <div class="tab-content mx-2" id="tabs-content">
+            <div class="tab-pane fade show active" id="historia" role="tabpanel" aria-labelledby="historia-tab" tabindex="0" >
+                <h3 class="mt-2">Nuestra Historia</h3>
+                <p>Hace años, un grupo de amigos apasionados por el ciclismo y la exploración se reunieron en una cafetería de Buenos Aires. Impulsados por el deseo de aventura y la fascinante historia de Juan sobre sus travesías en bicicleta por los paisajes argentinos, decidieron unir fuerzas y crear algo especial. Así nació <b>Pedale<span class="verde">AR</span></b>, un proyecto que desde entonces ha crecido y evolucionado, uniendo a personas de todas partes con una pasión compartida por el cicloturismo y el descubrimiento de los rincones más bellos de Argentina.</p>
+                <img src="./static/img-nosotros/historia.png" class="rounded mx-auto d-block" alt="">
+            </div>
+            <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab" tabindex="0" >
+                <h3 class="mt-2">Nuestra Visión</h3>
+                <p>En <b>Pedale<span class="verde">AR</span></b>, creemos en la belleza de Argentina y en la conexión que se puede encontrar a través del ciclismo. Nuestra visión es compartir la magia de nuestro país con el mundo, inspirando a otros a descubrir la riqueza cultural, natural y gastronómica que ofrece cada rincón. Queremos crear una comunidad de amantes del cicloturismo que aprecien y respeten la diversidad de nuestro país y que se embarquen en aventuras inolvidables juntos.</p>
+                <img src="./static/img-nosotros/vision.png" class="rounded mx-auto d-block" alt="">
+            </div>
+            <div class="tab-pane fade" id="mision" role="tabpanel" aria-labelledby="mision-tab" tabindex="0" >
+                <h3 class="mt-2">Nuestra Misión</h3>
+                <p>En <b>Pedale<span class="verde">AR</span></b>, nuestra misión es ofrecer experiencias únicas de cicloturismo que resalten la belleza y la diversidad de Argentina. Nos comprometemos a explorar cada rincón del país de manera responsable y sostenible, promoviendo el respeto por el medio ambiente y las comunidades locales. Queremos inspirar a las personas a conectar con la naturaleza, la cultura y la gastronomía argentina a través del ciclismo, creando recuerdos inolvidables y fomentando un amor duradero por nuestro hermoso país.</p>
+                <img class="rounded mx-auto d-block" src="./static/img-nosotros/mision.png" alt="">
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="carta">
+            <h3>¡Hola aventurero!</h3>
             <p>
-                ¡Bienvenidos a nuestro rincón cicloturista! Somos un equipo diverso, unidos por la pasión compartida
-                hacia el cicloturismo
-                y la exploración de los magníficos paisajes argentinos en bicicleta. Cada uno aporta una perspectiva
-                única, desde el
-                entusiasta de la naturaleza hasta el amante de la historia, formando un grupo lleno de energía y
-                diversidad.
+                ¿Estás listo para vivir una experiencia única y emocionante explorando los paisajes más
+                espectaculares de Argentina sobre dos ruedas? ¡Entonces únete a nuestro apasionado equipo y
+                prepárate para pedalear hacia aventuras inolvidables!
             </p>
-            <img class="nosotros-img" src="https://wp.es.aleteia.org/wp-content/uploads/sites/7/2016/05/friends.jpg?w=620&h=310&crop=1"
-                alt="Amigos en bicicleta">
-        </div>
-
-        <div class="container bg-color container-2">
-            <p class="historia">
-                Un día soleado de primavera, un grupo de amigos con una pasión compartida por el ciclismo se reunió en
-                una cafetería en Buenos Aires. Impulsados por la fascinante anécdota de Angel sobre una travesía en
-                bicicleta por las sierras de Córdoba, decidieron convertir su chispa de aventura en una llama ardiente.
-                <br><br>
-                Decidimos entonces que era hora de convertir esa chispa en una llama ardiente de exploración y
-                descubrimiento. Con mapas extendidos sobre la mesa y sueños de aventuras danzando en nuestras mentes,
-                trazamos nuestro primer itinerario cicloturista: una travesía desde los valles verdes de Salta hasta las
-                escarpadas cumbres de la Patagonia.
-                <br><br>
-                Asi nace PedaleAR. Desde entonces, nuestro grupo ha crecido y evolucionado, cada vez más unidos por la
-                pasión compartida por el cicloturismo y el deseo de explorar cada rincón oculto de nuestra hermosa
-                tierra.
-                <br><br>
-                A lo largo de los años, tuvimos la oportunidad de conectar con personas increíbles que comparten nuestra
-                pasión y entusiasmo. Cada giro de pedal nos acerca más a la realización de nuestro sueño de compartir
-                las bellezas naturales de Argentina con el mundo, inspirando a otros a descubrir la magia del
-                cicloturismo en nuestra amada tierra.
+            <p>
+                Ya sea que seas un ciclista experimentado o estés buscando tu primera aventura en bicicleta, ¡te
+                invitamos a unirte a nosotros en esta emocionante travesía! Descubre nuevos horizontes, haz
+                amigos de viaje y crea recuerdos para toda la vida mientras exploramos juntos los paisajes más
+                impresionantes de Argentina.
             </p>
-            <img class="historia-img" src="Static/img-nosotros/img-historia.png" alt="ciclistas en la ciudad ">
+            <p>
+                No importa si prefieres el desafío de las montañas o la serenidad de los caminos rurales, hay
+                una aventura esperándote en cada pedalada. Así que ajusta tu casco, engrasa tus cadenas y únete
+                a nosotros en esta emocionante aventura cicloturista por Argentina.
+            </p>
+            <p>
+                ¡Ven y descubre la magia del cicloturismo en nuestra amada Argentina! Te esperamos con los
+                brazos abiertos para compartir contigo momentos inolvidables.
+            </p>
+            <p>¡Hasta la próxima!</p>
+            <p>El equipo de <b>Pedale<span class="verde">AR</span> <i class="fa-solid  fa-heart"></i></p>
         </div>
 
-        <div class="container equipo-container">
-            <div class="equipo">
-                <h2>El equipo</h2>
-                <p>
-                    Estos son los integrantes de nuestro apasionado grupo cicloturista, cada uno aportando su propia pasión
-                    y experiencia para hacer de cada viaje una aventura inolvidable. ¡Ven y únete a nosotros en esta
-                    emocionante travesía por los paisajes de Argentina!
-                </p>
+        <div class="form mx-auto">
+            <div class="form-derecha">
+                <h2>¡Únete a nuestra comunidad!</h2>
+                <p>Te mantendremos al tanto de todas las <b>novedades</b></p>
+                <form>
+                    <input class="mail" type="email" placeholder="Tu email"><br><br>
+                    <input class="boton" type="submit">
+                </form>
             </div>
-
-            <div class="seccion-tarjetas">
-                <div class="tarjetas-container">
-                    <div class="tarjeta">
-                        <div class="frente">
-                            <img src="./Static/img-nosotros/angel.jpg"
-                                alt="Miembro del equipo">
-                            <h3>Ángel</h3>
-                            <p>El fundador</p>
-                        </div>
-
-                        <div class="dorso">
-                            <h3>Ángel: El Fundador Apasionado</h3>
-                            <p>
-                                Biografía: Ángel es el alma y fundador del grupo. Desde joven, ha tenido una profunda
-                                pasión por el ciclismo y la exploración de los paisajes argentinos. Su amor por la
-                                aventura lo llevó a reunir a un grupo de amigos con intereses similares para formar este
-                                emocionante proyecto cicloturista.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tarjetas-container">
-                    <div class="tarjeta">
-                        <div class="frente">
-                            <img src="https://cdnstorage.sendbig.com/unreal/female.webp" alt="Miembro del equipo">
-                            <h3>Xime</h3>
-                            <p>La fotógrafa</p>
-                        </div>
-
-                        <div class="dorso">
-                            <h3>Xime: La Fotógrafa Apasionada</h3>
-                            <p>
-                                Xime es una amante de la naturaleza y la fotografía. Desde pequeña, ha disfrutado
-                                explorando los rincones más remotos de Argentina con su cámara en mano. Su habilidad
-                                para capturar la esencia de los paisajes la convierte en una parte invaluable del
-                                equipo.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tarjetas-container">
-                    <div class="tarjeta">
-                        <div class="frente">
-                            <img src="https://www.zmo.ai/wp-content/uploads/2023/03/Feishu20230309-195534-300x300.png"
-                                alt="Miembro del equipo">
-                            <h3>Mauro</h3>
-                            <p>El historiador</p>
-                        </div>
-
-                        <div class="dorso">
-                            <h3>Mauro: El Historiador Curioso</h3>
-                            <p>
-                                Mauro es el historiador del grupo. Su conocimiento profundo de la historia argentina
-                                agrega una dimensión única a cada viaje, permitiendo a todos sumergirse en las
-                                tradiciones y el patrimonio cultural del país.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tarjetas-container">
-                    <div class="tarjeta">
-                        <div class="frente">
-                            <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdcb60d23-fd08-4eba-aa07-a4985ca65474_1024x1024.jpeg"
-                                alt="Miembro del equipo">
-                            <h3>Jazmin</h3>
-                            <p>La entusiasta</p>
-                        </div>
-
-                        <div class="dorso">
-                            <h3>Jazmín: La Entusiasta de la Gastronomía</h3>
-                            <p>
-                                Jazmín es una apasionada de la gastronomía y la cocina. Su amor por los sabores auténticos
-                                y la comida local la ha llevado a explorar cada región de Argentina en busca de delicias
-                                culinarias.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <img src="./static/img-nosotros/img-suscribe.png"
+                alt="vector ciclista">
         </div>
+    </div>
 
-        <div class="container container-2">
-            <div class="carta">
-                <h3>¡Hola aventurero!</h3>
-                <p>
-                    ¿Estás listo para vivir una experiencia única y emocionante explorando los paisajes más
-                    espectaculares de Argentina sobre dos ruedas? ¡Entonces únete a nuestro apasionado equipo y
-                    prepárate para pedalear hacia aventuras inolvidables!
-                </p>
-                <p>
-                    Ya sea que seas un ciclista experimentado o estés buscando tu primera aventura en bicicleta, ¡te
-                    invitamos a unirte a nosotros en esta emocionante travesía! Descubre nuevos horizontes, haz
-                    amigos de viaje y crea recuerdos para toda la vida mientras exploramos juntos los paisajes más
-                    impresionantes de Argentina.
-                </p>
-                <p>
-                    No importa si prefieres el desafío de las montañas o la serenidad de los caminos rurales, hay
-                    una aventura esperándote en cada pedalada. Así que ajusta tu casco, engrasa tus cadenas y únete
-                    a nosotros en esta emocionante aventura cicloturista por Argentina.
-                </p>
-                <p>
-                    ¡Ven y descubre la magia del cicloturismo en nuestra amada Argentina! Te esperamos con los
-                    brazos abiertos para compartir contigo momentos inolvidables.
-                </p>
-                <p>¡Hasta la próxima!</p>
-                <p>El equipo de PedaleAR <i class="fa-solid  fa-heart"></i></p>
+      <footer class="footer">
+
+        <section class="footer-items">
+            <ul class="datos">
+
+                <li><i class="fa-solid fa-envelope"></i><a >info@pedalear.com.ar</a></li>
+                <li><i class="fa-solid fa-phone"></i><a >54 9 11 3456 5844</a></li>
+                <li><i class="fa-solid fa-location-dot"></i><a >Av. Directorio 5435, CABA, Argentina</a></li>
+            </ul>
+    
+            <div class="redes-sociales">
+                <h3>SEGUINOS EN NUESTRAS REDES</h3>
+                <img href="#" src="./Static/img_inicio/Icono_whatsapp-01.png" alt="Icono Whatsapp" />
+                <img href="#" src="./Static/img_inicio/Icono_instagram-02.png" alt="Icono Instagram" />
+                <img href="#" src="./Static/img_inicio/icono_twitter-04.png" alt="Icono Twitter" />
+                <img href="#" src="./Static/img_inicio/icono_facebook-03.png" alt="Icono Facebook" />
+             
             </div>
-
-            <div class="form">
-                <div class="form-derecha">
-                    <h2>¡Únete a nuestra comunidad!</h2>
-                    <p>Te mantendremos al tanto de todas las <b>novedades</b></p>
-                    <form>
-                        <input class="mail" type="email" placeholder="Tu email"><br><br>
-                        <input class="btn" type="submit">
-                    </form>
-                </div>
-                <img src="Static/img-nosotros/img-suscribe.png"
-                    alt="vector ciclista">
+            
+            <div class="logo-footer">
+                <img src="./Static/img_inicio/Logotipo.png" alt="Logotipo Pedalear">
             </div>
-        </div>
+            
+            
+        </section>
+                     
+        <p>Copyright © 2024 Grupo1 - Curso Node Codo a Codo | Todos los derechos reservados.</p>
 
-         
-        <footer class="footer">
+    </footer>
 
-            <section class="footer-items">
-                <ul class="datos">
-    
-                    <li><i class="fa-solid fa-envelope"></i><a >info@pedalear.com.ar</a></li>
-                    <li><i class="fa-solid fa-phone"></i><a >54 9 11 3456 5844</a></li>
-                    <li><i class="fa-solid fa-location-dot"></i><a >Av. Directorio 5435, CABA, Argentina</a></li>
-                </ul>
-        
-                <div class="redes-sociales">
-                    <h3>SEGUINOS EN NUESTRAS REDES</h3>
-                    <img href="#" src="./Static/img_inicio/Icono_whatsapp-01.png" alt="Icono Whatsapp" />
-                    <img href="#" src="./Static/img_inicio/Icono_instagram-02.png" alt="Icono Instagram" />
-                    <img href="#" src="./Static/img_inicio/icono_twitter-04.png" alt="Icono Twitter" />
-                    <img href="#" src="./Static/img_inicio/icono_facebook-03.png" alt="Icono Facebook" />
-                 
-                </div>
-                
-                <div class="logo-footer">
-                    <img src="./Static/img_inicio/Logotipo.png" alt="Logotipo Pedalear">
-                </div>
-                
-                
-            </section>
-                         
-            <p>Copyright © 2024 Grupo1 - Curso Node Codo a Codo | Todos los derechos reservados.</p>
-    
-        </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>      
 </body>
 </html>
