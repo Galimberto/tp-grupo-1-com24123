@@ -23,6 +23,7 @@ html body{
 body{
     min-height: 100vh;
     background-color: beige;
+   
     
 }
 
@@ -111,28 +112,37 @@ body{
 /*-------------------MAIN-------------------*/
 legend{
     text-align: center;
-    border: 2px solid rgb(1, 1, 1);
     padding: 2px;
     color: beige;
     background-color: #7BD009;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 fieldset{
     margin: 20px 0;
-    border: 2px solid rgb(1, 1, 1);
-    border-radius: 5px;
+    width: 30%;
+    margin: 0 auto;
+    border: 2px solid #7BD009;
+    border-radius:  10px;
+    padding: 0 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(1, 1, 1, 0.5);
 }
 
 .form-container{
-    
+    background-image: url('../Static/img-contacto/bici\ fondoCPB.webp');
+    background-position: center bottom; /*al agregar mas campos revisar*/
+    background-repeat: no-repeat;
+    background-size: cover;  
+    width: 100%;
+    opacity: 0.8;
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    width: 20vw;
-    padding: 0 6px;
+    margin: 0 auto;
 }
 
 input, textarea{
@@ -141,10 +151,12 @@ input, textarea{
     padding: 6px 8px;
     border: none;
     border: 2px solid #7BD009;
-    box-shadow:  0 0 15 #0003;
+    box-shadow:  0 0 15px #0003;
     background-color: transparent;
     border-radius: 4px;
     outline: none;
+    color: #E8E8E8;
+    margin: 3px;
 }
 
 input{
@@ -153,17 +165,32 @@ input{
     border-left: none;
 }
 
-input:focus, textarea:focus{
-    /*border: none;*/
-    background-color: #b0f853;
+input::placeholder, textarea::placeholder{
+    color: #D3D3D3;
 }
+
+/*input:focus, textarea:focus{
+    border: none;
+}*/
 
 input:focus::placeholder, textarea:focus::placeholder{
     visibility: hidden;
 }
 
+.consultas{
+    margin: 20px 0;
+}
+
+.radios{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+}
+
 label{
-    margin: 0 6px;
+    color: #E8E8E8;
+    margin: 3px 6px;
 }
 
 textarea{
@@ -179,7 +206,7 @@ textarea:not(:focus) {
   }
 
 .button{
-    margin-top: 5px;
+    margin: 5px;
     background-color: #7BD009;
     color: beige;
     border-radius: 5px;
