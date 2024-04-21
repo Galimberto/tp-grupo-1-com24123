@@ -7,23 +7,31 @@
 /******************** ESTILOS Seccion rutas ***************/
 
 /* estilos del section-banner */
-.container-main{
+/* .container-main{
     width: 90vw;
     max-width: 1200px;
     margin: 15px auto;
     display: flex;
     flex-direction: column;
     padding: 10px;
-} 
-.img-banner{
-    display: flex;
-    width: 80%;
-    height: 87vh;
+}  */
+
+.rutas-main{   
+    max-width: 1200px;
+    padding: 5px; 
+    
+}
+
+.rutas-banner{    
+    position: relative;
+    
+}
+.img-banner{    
+    width: 100%; 
+    height: 80vh;
     background-image: url('../static/img-rutas/banner.jpg');
     background-size: cover;
-    background-position: center;
-    margin: 0 auto;
-    
+    background-position: center;       
 }
 .rutas-banner p:nth-child(1){
     position: absolute;
@@ -31,7 +39,7 @@
     left: 15%;
     color: seashell;
     z-index: 5;
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-shadow: 3px 3px 6px rgba(0,0,0,0.9);
 }
 .rutas-banner p:nth-child(3){
@@ -40,22 +48,26 @@
     right: 15%;
     color: seashell;
     z-index: 5;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     text-shadow: 3px 3px 4px rgba(0,0,0,1);
     
 }
-.rutas-banner {
+/* .rutas-banner {
     display: flex;
     padding: 10px;
 
     position: relative;
     
-}
+} */
 .rutas-banner p:nth-child(3) a{
     text-decoration: none;
 }
 
 /************ estilos de rutas-presentacion ***********/
+.rutas-presentacion .rutas{
+    background-color: bisque;
+    padding-bottom: 15px;
+}
 
 .rutas-presentacion{
     margin-top: 15px;
@@ -63,27 +75,28 @@
 }
 .rutas-presentacion h1{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     color: chocolate;
 
 }
-.rutas-presentacion .rutas{
+/* .rutas-presentacion .rutas{
     margin: 15px auto;
-}
+} */
 .rutas-presentacion .rutas h2{
     padding-left: 15%;
     color: chocolate;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
 }
 .rutas-presentacion .rutas .container-img{
     display: flex; 
-    /* border: 1px solid red; */
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 7px 0;
 }
 .rutas-presentacion .slider{
-    width: 250px;
-    /* border: 1px solid black; */
+    /* width: 250px; */
+    margin-top: 5px;
 }
 .rutas-presentacion .rutas p{
     text-align: center;
@@ -96,8 +109,8 @@
     padding: 10px 0;
 }
 .slider-res{
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
     background-size: cover;
     background-position: center;
 }
@@ -131,7 +144,7 @@
     flex-wrap: wrap;
 }
 .rutas-footer p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 .rutas-footer a{
     text-decoration: none;
@@ -144,49 +157,57 @@
 .rutas-footer p span{
     color: tomato;
     font-weight: 800;
-    font-size: 1.3rem;
+    font-size: 1rem;
 } 
 
 /************ estilos de rutas-desarrollo ***********/
-.rutas-desarrollo article{
+/* .rutas-desarrollo article{
     margin: 25px auto;
     display: flex;
     flex-direction: column;
+} */
+.txt-foto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-
 .rutas-desarrollo h3{
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     color: chocolate;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
    
 }
-.rutas-desarrollo .container-desrr{
+/* .rutas-desarrollo .container-desrr{
     display: flex;
     align-items: center;  
-}
+} */
 
-.rutas-desarrollo .container-info{
-    display: flex;
-    flex-direction: column;
-    padding: 7px;
-}
+
 .rutas-desarrollo .txt-info{
-    width: 550px;
-    padding-left: 20px;
-    
+    width: 330px;
+    padding: 0 5px;
+    margin-bottom: 7px;
 }
-.rutas-desarrollo .container-info i{
-    margin-right: 6px;
+.rutas-desarrollo .txt-foto i{
+    margin: 0 7px;
 }
 .rutas-desarrollo .txt-info p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
+    margin-top: 5px;
+}
+
+.mapa-info{
+    width: 90%;
+    margin: 5px auto;
+    padding: 0 auto;
+    
 }
 .rutas-desarrollo .galeria{
-    width: 540px;
-    height: 480px;    
+    width: 330px;
+    height: 380px;    
     background-size: cover;
     background-position: center;
 }
@@ -200,7 +221,7 @@
     background-image: url('../static/img-rutas/otamendi.jpg');   
 }
 .rutas-desarrollo .fot-pal{
-    background-image: url('../static/img-rutas/palmar.jpg');   
+    background-image: url('../static/img-rutas/ciclismoelpalmar13_5.jpg');   
 }
 .rutas-desarrollo .fot-keen{
     background-image: url('../static/img-rutas/keen.jpg');   
@@ -214,7 +235,7 @@
 .rutas-desarrollo .fot-raf{
     background-image: url('../static/img-rutas/SanRafael.jpg');   
 }
-.rutas-desarrollo .txt-info a{
+/* .rutas-desarrollo .txt-info a{
     text-decoration: none;
     color: seashell;
     background-color: tomato;
@@ -224,67 +245,48 @@
 }
 .rutas-desarrollo .volver{
     text-align: right;
-}
-
-/************* media query ***************/
-@media only screen and (max-width: 600px){
-    .container-main{
-        margin: 0 auto;
-        flex-direction: column;
-    }
-    
-    .rutas-banner p:nth-child(1){
-        font-size: 1.42rem;
-        top: 10%;
-    }
-    .rutas-banner p:nth-child(3){
-        font-size: 1rem;
-        bottom: 5%;
-        left: 15%;
-    }
-    .img-banner{
-       display: flex;
-       flex-wrap: wrap;
-        height: 37vh;
-    }
-   .container-desrr{
-        flex-wrap: wrap;
-   }
-   .rutas-desarrollo h3{
-    font-size: 1.5rem;
-   }
-   .rutas-footer p span, .rutas-footer p{
-    font-size: 1rem;
-   }
-
-.rutas-desarrollo .container-info{
-    padding: 5px;
-    
-}
-/* .rutas-desarrollo .mapa-info{
-    display: none;
 } */
 
-}
-
-
-
-@media only screen and (min-width: 601px) and (max-width: 768px){
-
-    .img-banner{
-        
-        height: 50vh;
+/************* media query ***************/
+@media only screen and (min-width: 600px){
+    .slider-res{
+        width: 400px;
+        height: 350px;
+    }
+    .rutas-presentacion .rutas .container-img{
+        justify-content:space-evenly;
+    }
+    .rutas-presentacion h1{
+        font-size: 3rem;
+    }
+    .rutas-presentacion .rutas h2{
+        font-size: 2rem;
+    }
+    .rutas-presentacion .rutas p{
+        font-size: 2rem;
+    }
+    .rutas-footer p{
+        font-size: 1.7rem;
+    }
+    .rutas-desarrollo h3{
+        font-size: 2rem;
+    }
+    .rutas-desarrollo .txt-info, .rutas-desarrollo .galeria{
+        width: 450px; 
     }
     .rutas-banner p:nth-child(1){
-        font-size: 2.52rem;
-        top: 10%;
+        font-size: 3rem;
     }
     .rutas-banner p:nth-child(3){
-        font-size: 1.5rem;
-        bottom: 5%;
-        left: 15%;
+        font-size: 2rem;
     }
-    .container-desrr{
-        flex-wrap: wrap;
-   }
+
+}
+
+@media only screen and (min-width: 1000px){
+    .rutas-desarrollo h3{
+        font-size: 2.5rem;
+    }
+    
+
 }
