@@ -45,7 +45,8 @@
 .rutas-banner p:nth-child(3){
     position: absolute;
     bottom: 3%;
-    right: 15%;
+    left: 5%;
+    
     color: seashell;
     z-index: 5;
     font-size: 1.6rem;
@@ -67,6 +68,7 @@
 .rutas-presentacion .rutas{
     background-color: bisque;
     padding-bottom: 15px;
+    
 }
 
 .rutas-presentacion{
@@ -256,6 +258,11 @@
     .rutas-presentacion .rutas .container-img{
         justify-content:space-evenly;
     }
+    .rutas-presentacion .rutas{
+        width: 90%;
+        margin: 10px auto;
+    }
+
     .rutas-presentacion h1{
         font-size: 3rem;
     }
@@ -278,7 +285,18 @@
         font-size: 3rem;
     }
     .rutas-banner p:nth-child(3){
-        font-size: 2rem;
+        font-size: 2rem;        
+        left: 15%; 
+    }
+    .mapa-info{
+        width: 80%;               
+    }
+    .rutas-desarrollo .txt-foto span{
+        font-size: 1.1rem;
+    }
+    .img-banner{    
+        width: 90%; 
+        margin: 0 auto;
     }
 
 }
@@ -288,5 +306,14 @@
         font-size: 2.5rem;
     }
     
+    .rutas-banner p:nth-child(3){               
+        left: 35%; 
+    }
 
+    .mapa-info{
+        width: 70%;               
+    }
+    .rutas-desarrollo .txt-info p{
+        font-size: 1.1rem;
+    }
 }
