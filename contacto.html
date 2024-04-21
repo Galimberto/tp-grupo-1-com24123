@@ -36,6 +36,23 @@
                 
                 <label for="mail">Email</label>
                 <input type="mail" name="mail" id="mail" placeholder="Ingrese su correo electronico..." required>
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="mail" placeholder="Ingrese su numero de telefono" required>
+
+                <div class="consultas">
+                <label for="consulta">Elija el motivo de su consulta</label>
+                    <div class="radios">
+                        <input type="radio" name="consulta" id="preguntas" checked>
+                        <label for="preguntas">Preguntas</label>
+                        
+                        <input type="radio" name="consulta" id="reclamos">
+                        <label for="reclamos">Reclamos</label>
+                        
+                        <input type="radio" name="consulta" id="sugerencias">
+                        <label for="sugerencias">Sugerencias</label>
+                    </div>
+                </div>
                 
                 <label for="message">Mensaje</label>
                 <textarea name="message" id="message" rows="10" placeholder="Escriba su mensaje..." minlength="3" maxlength="100" required></textarea>

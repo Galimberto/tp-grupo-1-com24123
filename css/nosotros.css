@@ -101,8 +101,8 @@ ol, ul {
 
 /* Estilos primera seccion*/
 .seccion-equipo {
-    padding: 20px;
-    margin: 10px auto;
+    padding: 5px;
+    margin: 5px auto;
     width: 100%;
     max-width: 1200px;
     display: flex;
@@ -112,14 +112,19 @@ ol, ul {
 
 .titulo {
     width: 100%;
-    margin-bottom: 40px;
     color: #7BD009;
     border-radius: 10px;
-    padding: 40px 40px;
+    padding: 20px 40px;
     letter-spacing: 2px;
     word-spacing: 10px;
     text-align: center;
     font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+span .titulo {
+    text-align: center;
 }
 
 .seccion-equipo h2 {
@@ -483,8 +488,9 @@ footer img {
         display: block;
     }
 
-    .titulo {
-        font-size: 40px;
+    .titulo  {
+        width: 100%;
+        height: auto;
     }
 
     .subtitulo {
@@ -536,5 +542,20 @@ footer img {
 
     .form img {
        display: none;
+    }
+
+    .footer-items {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .datos, .redes-sociales {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo-footer {
+        display: none;
     }
 }  
