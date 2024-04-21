@@ -36,7 +36,7 @@
 .rutas-banner p:nth-child(3){
     position: absolute;
     bottom: 3%;
-    left: 5%;    
+    left: 7%;    
     color: seashell;
     z-index: 5;
     font-size: 1.6rem;
@@ -46,11 +46,12 @@
 
 .rutas-banner p:nth-child(3) a{
     text-decoration: none;
+    font-size: 2rem;
 }
 
 .rutas-banner p:nth-child(3) span{
     display: inline-block;
-    animation: wiggle 2s linear infinite;
+    animation: wiggle 1.3s linear infinite;
     
 }
   
@@ -164,17 +165,19 @@
     text-decoration: none;
     color:seashell;
     font-weight: bolder;
-    padding: 5px 8px;
+    padding: 3px 8px;
     background-color: tomato;
     border-radius: 25px;
 }
-.rutas-footer p span{
-    color: tomato;
-    font-weight: 800;
-    font-size: 1rem;
+.rutas-footer .btn-volver{
+    display: inline-block;
 } 
 
 /************ estilos de rutas-desarrollo ***********/
+
+.rutas-desarrollo article{
+    margin: 40px 0;
+}
 
 .txt-foto{
     display: flex;
@@ -186,6 +189,7 @@
     font-size: 1.5rem;
     color: chocolate;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin-bottom: 10px;
    
 }
 
@@ -241,6 +245,15 @@
     background-image: url('../static/img-rutas/SanRafael.jpg');   
 }
 
+.volver a{
+    text-decoration: none;
+   
+}
+
+.volver{
+    text-align: center;
+    font-size: 1.3rem;
+}
 
 /************* media query ***************/
 @media only screen and (min-width: 600px){
@@ -263,7 +276,7 @@
         font-size: 2rem;
     }
     .rutas-presentacion .rutas p{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .rutas-footer p{
         font-size: 1.7rem;
