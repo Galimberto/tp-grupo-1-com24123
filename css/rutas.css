@@ -6,15 +6,6 @@
 
 /******************** ESTILOS Seccion rutas ***************/
 
-/* estilos del section-banner */
-/* .container-main{
-    width: 90vw;
-    max-width: 1200px;
-    margin: 15px auto;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}  */
 
 .rutas-main{   
     max-width: 1200px;
@@ -45,24 +36,47 @@
 .rutas-banner p:nth-child(3){
     position: absolute;
     bottom: 3%;
-    left: 5%;
-    
+    left: 5%;    
     color: seashell;
     z-index: 5;
     font-size: 1.6rem;
     text-shadow: 3px 3px 4px rgba(0,0,0,1);
     
 }
-/* .rutas-banner {
-    display: flex;
-    padding: 10px;
 
-    position: relative;
-    
-} */
 .rutas-banner p:nth-child(3) a{
     text-decoration: none;
 }
+
+.rutas-banner p:nth-child(3) span{
+    display: inline-block;
+    animation: wiggle 2s linear infinite;
+    
+}
+  
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
 
 /************ estilos de rutas-presentacion ***********/
 .rutas-presentacion .rutas{
@@ -81,9 +95,7 @@
     color: chocolate;
 
 }
-/* .rutas-presentacion .rutas{
-    margin: 15px auto;
-} */
+
 .rutas-presentacion .rutas h2{
     padding-left: 15%;
     color: chocolate;
@@ -163,11 +175,7 @@
 } 
 
 /************ estilos de rutas-desarrollo ***********/
-/* .rutas-desarrollo article{
-    margin: 25px auto;
-    display: flex;
-    flex-direction: column;
-} */
+
 .txt-foto{
     display: flex;
     flex-wrap: wrap;
@@ -180,11 +188,6 @@
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
    
 }
-/* .rutas-desarrollo .container-desrr{
-    display: flex;
-    align-items: center;  
-} */
-
 
 .rutas-desarrollo .txt-info{
     width: 330px;
@@ -237,17 +240,7 @@
 .rutas-desarrollo .fot-raf{
     background-image: url('../static/img-rutas/SanRafael.jpg');   
 }
-/* .rutas-desarrollo .txt-info a{
-    text-decoration: none;
-    color: seashell;
-    background-color: tomato;
-    padding: 4px 8px;
-    border-radius: 25px;
-    font-weight: bold;
-}
-.rutas-desarrollo .volver{
-    text-align: right;
-} */
+
 
 /************* media query ***************/
 @media only screen and (min-width: 600px){
