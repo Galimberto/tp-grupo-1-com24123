@@ -213,8 +213,13 @@ textarea:not(:focus) {
     width: 60%;
     height: 30px;
     align-self: center;
+    transition: opacity 0.3s ease;
 }
 
+.button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
 
 
 /*-------------------FOOTER-------------------*/
