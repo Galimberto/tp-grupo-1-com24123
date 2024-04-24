@@ -174,6 +174,10 @@
 } 
 
 /************ estilos de rutas-desarrollo ***********/
+/* iframe {
+    max-width: 100%;
+    height: auto;
+} */
 
 .rutas-desarrollo article{
     margin: 40px 0;
@@ -209,10 +213,19 @@
 }
 
 .mapa-info{
-    width: 90%;
+    width: 90vw;
     margin: 5px auto;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
     
-    
+}
+.mapa-info iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 .rutas-desarrollo .galeria{
     width: 330px;
@@ -258,8 +271,8 @@
 /************* media query ***************/
 @media only screen and (min-width: 600px){
     .slider-res{
-        width: 400px;
-        height: 350px;
+        width: 280px; /* 400px */
+        height: 300px; /* 350px */
     }
     .rutas-presentacion .rutas .container-img{
         justify-content:space-evenly;
@@ -295,7 +308,9 @@
         left: 15%; 
     }
     .mapa-info{
-        width: 80%;               
+        width: 60vw; /* 600px */
+        padding-bottom: 30%;  
+        /* height: 350px; */               
     }
     .rutas-desarrollo .txt-foto span{
         font-size: 1.1rem;
@@ -316,10 +331,15 @@
         left: 35%; 
     }
 
-    .mapa-info{
-        width: 70%;               
-    }
+    /* .mapa-info{
+        width: 800px;
+        height: 400px;               
+    } */
     .rutas-desarrollo .txt-info p{
         font-size: 1.1rem;
+    }
+    .slider-res{
+        width: 350px; 
+        height: 300px; 
     }
 }
