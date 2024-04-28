@@ -10,18 +10,24 @@
   </head>
   <body id="inicio-rutas">
     <header class="header">
-      <div class="logo">
-        <img src="./Static/img_inicio/Logotipo.png" alt="Logotipo Pedalear" >
-      </div>
-
       <nav class="nav">
-        <ul class="nav links">
+        <div class="logo">
+         <img src="./static/img_inicio/Logotipo.png" alt=""> 
+        </div>
+
+        <input type="checkbox" class="checkbox">
+        <i class="icons fa-solid fa-bars"></i>
+        <i class="icons fa-solid fa-xmark"></i>
+      
+        <ul class="menu">
           <li><a href="index.html">INICIO</a></li>
           <li><a href="rutas.html">RUTAS</a></li>
           <li><a href="nosotros.html">NOSOTROS</a></li>
           <li><a href="contacto.html">CONTACTO</a></li>
         </ul>
       </nav>
+      
+
     </header>
     <main class="container-main" >
       
@@ -477,33 +483,38 @@
 
     <footer class="footer">
       <section class="footer-items">
-        <ul class="datos">
-          <li>
-            <i class="fa-solid fa-envelope"></i><a>info@pedalear.com.ar</a>
-          </li>
-          <li><i class="fa-solid fa-phone"></i><a>54 9 11 3456 5844</a></li>
-          <li>
-            <i class="fa-solid fa-location-dot"></i
-            ><a>Av. Directorio 5435, CABA, Argentina</a>
-          </li>
-        </ul>
+        <div class="iconos-datos">
+          <ul class="datos">
+            <li>
+              <i class="fa-solid fa-envelope"></i><a>info@pedalear.com.ar</a>
+            </li>
+            <li><i class="fa-solid fa-phone"></i><a>54 9 11 3456 5844</a></li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i
+              ><a>Av. Directorio 5435, CABA, Argentina</a>
+            </li>
+          </ul>
+        </div>        
 
         <div class="redes-sociales">
           <h3>SEGUINOS EN NUESTRAS REDES</h3>
-          <img src="./Static/img_inicio/Icono_whatsapp-01.png"
-            alt="Icono Whatsapp">
-          <img src="./Static/img_inicio/Icono_instagram-02.png"
-            alt="Icono Instagram" >
-          <img src="./Static/img_inicio/icono_twitter-04.png"
-            alt="Icono Twitter" >
-          <img src="./Static/img_inicio/icono_facebook-03.png"
-            alt="Icono Facebook" >
+          <div class="iconos">
+              <img src="./Static/img_inicio/Icono_whatsapp-01.png"
+                alt="Icono Whatsapp">
+              <img src="./Static/img_inicio/Icono_instagram-02.png"
+                alt="Icono Instagram" >
+              <img src="./Static/img_inicio/icono_twitter-04.png"
+                alt="Icono Twitter" >
+              <img src="./Static/img_inicio/icono_facebook-03.png"
+                alt="Icono Facebook" >
+          </div>
         </div>
 
         <div class="logo-footer">
           <img src="./Static/img_inicio/Logotipo.png" alt="Logotipo Pedalear" >
         </div>
       </section>
+      
 
       <p>
         Copyright © 2024 Grupo1 - Curso Node Codo a Codo | Todos los derechos

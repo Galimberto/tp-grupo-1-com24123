@@ -1,6 +1,6 @@
 /********** estilos generales ******************/
 
-@import url('../css/index.css'); 
+@import url('../css/header_footer.css'); 
 
 /* Importo el index para traerme los estilos de header y footer*/
 
@@ -15,11 +15,12 @@
 
 .rutas-banner{    
     position: relative;
+    z-index: 1;
     
 }
 .img-banner{    
     width: 100%; 
-    height: 80vh;
+    height: 90vh;
     background-image: url('../static/img-rutas/banner.jpg');
     background-size: cover;
     background-position: center;       
@@ -29,7 +30,7 @@
     top:5%;
     left: 15%;
     color: seashell;
-    z-index: 5;
+    /* z-index: 5; */
     font-size: 2.5rem;
     text-shadow: 3px 3px 6px rgba(0,0,0,0.9);
 }
@@ -38,7 +39,7 @@
     bottom: 3%;
     left: 7%;    
     color: seashell;
-    z-index: 5;
+    /* z-index: 5; */
     font-size: 1.6rem;
     text-shadow: 3px 3px 4px rgba(0,0,0,1);
     
@@ -315,10 +316,10 @@
     .rutas-desarrollo .txt-foto span{
         font-size: 1.1rem;
     }
-    .img-banner{    
+   /*  .img-banner{    
         width: 90%; 
         margin: 0 auto;
-    }
+    } */
 
 }
 
