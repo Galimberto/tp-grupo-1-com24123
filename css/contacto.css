@@ -145,6 +145,9 @@ fieldset{
     margin: 0 auto;
 }
 
+.container .consultas p{
+    color: #E8E8E8;
+}
 input, textarea{
     width: 100%;
     box-sizing: border-box;
