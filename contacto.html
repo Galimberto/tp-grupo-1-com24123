@@ -30,7 +30,7 @@
     <main class="form-container">
         <fieldset>
             <legend>Datos</legend>
-            <form class="container">
+            <form class="container" id="miFormulario">
                 <label for="name">Nombre</label>
                 <input type="text" name="name" id="name" placeholder="Ingrese su nombre..." minlength="3" required>
                 
@@ -57,7 +57,7 @@
                 <label for="message">Mensaje</label>
                 <textarea name="message" id="message" rows="10" placeholder="Escriba su mensaje..." minlength="3" maxlength="100" required></textarea>
                 
-                <input class="button" type="submit" value="Enviar">
+                <button class="button" type="submit">Enviar</button>
             </form>    
         </fieldset>
         
@@ -92,6 +92,7 @@
         <p>Copyright © 2024 Grupo1 - Curso Node Codo a Codo | Todos los derechos reservados.</p>
 
     </footer>
+    <script src="./validar.js"></script>
 </body>
 
 </html>
