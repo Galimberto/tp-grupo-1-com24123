@@ -127,9 +127,9 @@ img {
     margin-bottom: 20px;
 }
 
-.footer .datos, .redes-sociales{
-    padding-left: 20px;
+.footer .datos, .redes-sociales{        
     width: 100%;
+    padding-bottom: 30px;
     
 }
 .footer-items .datos li{
@@ -162,7 +162,7 @@ img {
  }
  .redes-sociales .iconos{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
     flex-wrap: wrap;
  }
  .logo-footer img {
@@ -195,27 +195,35 @@ img {
         padding: 5px;
         top: 0;
         z-index: 1;
-        margin-top: 9px;
-        
+        margin-top: 9px;        
     }
-
    
     .menu li a{
-        background-color: rgba(0,0,0,0.9);
-        
+        background-color: rgba(0,0,0,0.9);        
     }
+
     .nav .menu li a{
         font-size: 1.2rem;
         margin-right: 7px;
     }
-    /******    footer        ******/
+
+
+    /******    footer        ******/    
+    
+    .datos{
+        padding-left: 60px;
+    
+    }
+
     .iconos-datos, .redes-sociales, .logo-footer{
         width: 30vw;
         margin: 0;
     }
+
     .redes-sociales img{
         margin: 0;
     }
+
     .footer-items{          
         display: flex;
         justify-content:space-around;
@@ -224,9 +232,9 @@ img {
         }
 
     .footer-items .datos li{
-        text-align: left;
-            
+        text-align: left;            
         } 
+
     .redes-sociales{
         display: flex;
         flex-direction: column;
@@ -235,10 +243,13 @@ img {
     .footer p{
         font-size: 14px;
     }
+
+    .redes-sociales .iconos{  
+        justify-content: space-evenly;  
+           
+     }
+
     
-
-
-
 
 }
 
