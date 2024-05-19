@@ -4,25 +4,34 @@
 
 /*-------------------MAIN-------------------*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
 .main{
     width: 100%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    /*background-color: rgb(213, 132, 12);*/
-           
+    /*flex-wrap: wrap;*/
+    text-align: center;           
 }
 
 
 .section-Bienvenidos{
     position: relative;
+    width: 100%;
+    height: auto;
     background-image: url('../Static/img_inicio/Aterdecer.jpg') ;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
             
 }
 
@@ -39,24 +48,31 @@
 
 .section-Bienvenidos .content-Bienvenidos {
     position: relative;
-    color: white; /* Color del texto para contraste con la capa oscura */
-    text-align: center; /* Centra el texto horizontalmente */
-    padding: 50px 50px;
-    z-index: 2; /* Asegúrate de que el texto esté encima de la capa de color */
+    color: white; 
+    text-align: center; 
+    padding: 5%;
+    z-index: 2; /* que el texto esté encima de la capa de color */
+}
+
+.content-Bienvenidos{
+    max-width: 1200px;
+    margin-bottom: 2vw;
 }
 
 .section-Bienvenidos h1{
     margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 70px;
+    font-size: 4rem;
+    /*font-size: 70px;*/
     color: #f3f3f3;
 }
 
 .section-Bienvenidos p{
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 200;
-    line-height: 40px;
-    margin: 60px 50px;
+    line-height: 1.5;
+    /*margin: 60px 50px;*/
+    /*max-width: 80%;*/
 }
 
 
@@ -66,34 +82,36 @@
 .section-Tips{
    display: flex;
    flex-direction: column;
+   align-items: center;
    flex-wrap: wrap;
    justify-content: center;   
-   margin: 30px 0px 50px 0px;
-   padding: 20px;
-   max-width: 1000px;
-   
-   
+   width: 100%;
+   margin-top: 2vw;
+   margin-bottom: 5vw;
+        
 }
 
-.section-Tips h2{
-    margin-bottom: 40px;
-    background-color:rgb(1, 1, 1);
-    color: #7BD009;
-    display: block;
-    border-radius: 10px;
-    padding: 40px 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    word-spacing: 10px;
 
+.section-Tips h2{
+    width: 100%;
+    background-color:rgb(1, 1, 1);
+    font-size: 1.5rem;
+    color: #7BD009;
+    /*display: block;*/
+    padding: 2vw;
+    margin-bottom: 2vw;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+ 
 }
 
 .content-cards{
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 2vw;
        
 }
 
@@ -146,7 +164,7 @@
 }
 
 .card .back h3 {
-    font-size: 14px;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     color: #7BD009;
     border-top: solid 1px #7BD009;
@@ -157,7 +175,7 @@
 
 .card .back p {
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 1rem;
     padding-top: 10px;
 } 
 
@@ -178,80 +196,38 @@
 
 
 
-/*-------------------FOOTER-------------------*/
+/*-------------------MEDIA QUERIES-------------------*/
 
-/*----------------MEDIA QUERIES-----------------*/
-
-/* img {
-    max-width: 100%; /* Hace que las imágenes sean responsivas */
- /*    height: auto;
-} */
-
-/* .header, .footer, .section {
-    width: 100%; /* Asegura que los elementos no sobresalgan del viewport */
-/* } */ 
 
 @media (max-width: 768px) {
-    /* .nav {
-        flex-direction: column; 
+    .section-Bienvenidos h1 {
+        font-size: 2rem;
     }
-    .nav ul {
-        flex-direction: column;
-    } */
+
+    .section-Tips h2 {
+        font-size: 1rem;
+    }
+
+    .section-Bienvenidos p {
+        font-size: 1rem;
+        
+    }
     .card {
-        flex-basis: 100%; /* Hace que las tarjetas tomen todo el ancho en dispositivos pequeños */
-    }
-    .section-Bienvenidos .content-Bienvenidos{
-        padding: 0;
-    }
-
-    .section-Bienvenidos h1{
-        margin-bottom: 20px;
-        margin-top: 20px;
-        font-size: 35px;
-        color: #f3f3f3;
-    }
-
-    .section-Bienvenidos p {        
-        margin: 0px;
-        padding: 0px;
-    }   
-
-/*     .footer{
-        padding: 15px 25px;
-    }
-
-    .logo-footer {
-        text-align: center;
-        padding-top: 10px;
         
     }
-
-    .footer-items{
-        margin-top: 0;
     }
 
-    .redes-sociales {
-        flex: 1 1 50%;
-        text-align: center;
+@media (max-width: 420px) {
+    .section-Tips {
+        width: 100%;
     }
-
-    .datos {
-        flex: 1 1 50%;
+   
+   
+    .card {
+        width: 300px;
+        height: 400px;
+        
     }
-
-    .logo-footer img {
-        max-width: 40%;
-        height: auto;
-        padding-top: 10px;
-    } */
-}
-
-/*@media (max-width: 420px) {
+   
+}    
     
-    .section-Tips {        
-        margin: 0;
-        padding: 0px;
-        
-    }  
-}*/

@@ -113,16 +113,18 @@ img {
 
 .footer .datos, .redes-sociales{
     padding-left: 10px;
-    width: 70%;
+    width: 100%;
     margin: 10px auto;
     margin-bottom: 25px;
 }
 .footer-items .datos li{
     list-style-type: none;
+    align-items: center;
+    text-align: center;
     
 } 
 .footer-items .datos li a{
-    margin-left: 7px;   
+    /*margin-left: 7px;*/   
 } 
 .redes-sociales img{
     width: 40px;
@@ -165,13 +167,15 @@ img {
     }
     .menu{
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-end;        
         padding: 5px;
         top: 0;
         z-index: 1;
         margin-top: 9px;
         
     }
+
+   
     .menu li a{
         background-color: rgba(0,0,0,0.9);
         
@@ -190,14 +194,21 @@ img {
     }
     .footer-items{          
         display: flex;
-        justify-content:space-between;
+        justify-content:space-around;
         flex-wrap: wrap;
         align-items: center;
         }
+
+    .footer-items .datos li{
+        text-align: left;
+            
+        } 
     .redes-sociales{
         display: flex;
         flex-direction: column;
     }
+
+
 
 
 }
