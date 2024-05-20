@@ -189,7 +189,7 @@
 /*-------------------MEDIA QUERIES-------------------*/
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .section-Bienvenidos h1 {
         font-size: 2rem;
     }
@@ -201,7 +201,7 @@
     .section-Bienvenidos p {
         font-size: 1rem;        
     }
-    
+}
 
 @media (max-width: 450px) {
     .section-Tips {
@@ -226,11 +226,7 @@
 
     .card .back h3{
         font-size: 1rem;
-    }
-
-
-    
-
+    } 
    
 }    
     

@@ -4,36 +4,36 @@
 
 
 
-
-
 /*-------------------MAIN-------------------*/
 legend{
     text-align: center;
-    padding: 2px;
-    color: beige;
+    padding: 2px 50px;
+    color: black;
     background-color: #7BD009;
-    border-radius: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-fieldset{
-    margin: 20px 0;
+fieldset{    
     width: 30%;
-    margin: 0 auto;
+    margin: 20px auto;
     border: 2px solid #7BD009;
     border-radius:  10px;
-    padding: 0 6px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 0 20px;    
     background-color: rgba(1, 1, 1, 0.5);
+    box-sizing: border-box;
 }
 
-.form-container{
+.form-container{  
     background-image: url('../Static/img-contacto/bici\ fondoCPB.webp');
     background-position: center bottom; /*al agregar mas campos revisar*/
     background-repeat: no-repeat;
     background-size: cover;  
-    width: 100%;
+    width: 100%;    
     opacity: 0.8;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .container{
@@ -60,6 +60,7 @@ input, textarea{
 }
 
 input{
+    box-sizing: border-box;
     border-right: none;
     border-top: none;
     border-left: none;
@@ -89,6 +90,7 @@ input:focus::placeholder, textarea:focus::placeholder{
 }
 
 label{
+    box-sizing: border-box;
     color: #E8E8E8;
     margin: 3px 6px;
 }
@@ -106,10 +108,12 @@ textarea:not(:focus) {
   }
 
 .button{
-    margin: 5px;
+    margin: 20px;
     background-color: #7BD009;
-    color: beige;
+    color: black;
+    font-weight: 700;
     border-radius: 5px;
+    border: none;
     width: 60%;
     height: 30px;
     align-self: center;
@@ -121,4 +125,43 @@ textarea:not(:focus) {
     opacity: 0.7;
 }
 
+
+/*--------------MEDIA QUERIES-------------*/
+
+@media (min-width: 360px) and (max-width: 600px) {
+    fieldset {
+        width: 70%;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    .radios {        
+        align-items: flex-start;
+        gap: 2px;
+        padding: 5px 5px;
+    }
+
+    .button {
+        width: 100%;
+        height: 40px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 780px) {
+    fieldset {
+        width: 30%;
+    }
+
+    .radios {        
+        align-items: center;
+        gap: 10px;
+    }
+
+    .button {
+        width: 60%;
+        height: 30px;
+    }
+}
 

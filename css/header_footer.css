@@ -54,7 +54,7 @@ img {
 .checkbox, .icons{
     
     /*--------CAMBIOS PARA QUE EL MENU PASE POR ABAJO----------------------*/
-    width: 200px;    
+    width: 100%;    
     text-align: right;
     background-color: black;
     height: 80px;
@@ -91,12 +91,14 @@ img {
     position: absolute;
     top: -200px;    
     right: 0px;
-    width: 200px;
+    width: 100%;
     z-index: 0;
-    transition: 1s;
+    transition: 0.7s;
 }
 .menu li{
     list-style: none;
+    border-bottom: 0.02px solid #7BD009;    
+    box-shadow: 0px -1px 6px 4px rgb(123 208 9 / 50%);
 }
 .nav .menu li a{
     text-decoration: none;
@@ -135,71 +137,77 @@ img {
 .footer-items .datos li{
     list-style-type: none;
     align-items: center;
-    text-align: center;
-
-    
+    text-align: center;  
 } 
 
 .datos{
     line-height: 1.8;
-
 }
 
 .datos li i{
-    margin-right: 8px;
-    
+    margin-right: 8px;    
 }
 
 .redes-sociales img{
     width: 40px;
-    margin: 10px;
-    
+    margin: 10px;    
  }
+
  .redes-sociales h3{
     text-align: center;
     font-size: 1rem;
     margin: 15px 0;
  }
+
  .redes-sociales .iconos{
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
  }
+
  .logo-footer img {
     max-width: 50%; 
     display: block;
     margin: 0 auto;
 }
+
 .logo-footer{
     margin: 20px auto;
 }
+
 .footer p{
     text-align: center;
     color: #999c95;
     padding: 20px;
     font-size: 10px;
-    letter-spacing: 2px;
-    
+    letter-spacing: 2px;    
  }   
  
 /****** media query  **********/
 
-
 @media only screen and (min-width: 700px){
+
     .checkbox, .fa-bars, .fa-xmark{
         display: none;
     }
+
     .menu{
         display: flex;
         justify-content: flex-end;        
         padding: 5px;
         top: 0;
         z-index: 1;
-        margin-top: 9px;        
+        margin-top: 9px;   
+        transition:none     
     }
    
     .menu li a{
         background-color: rgba(0,0,0,0.9);        
+    }
+
+    .menu li{        
+        border-bottom: none;
+        box-shadow: none;
     }
 
     .nav .menu li a{
@@ -211,8 +219,7 @@ img {
     /******    footer        ******/    
     
     .datos{
-        padding-left: 60px;
-    
+        padding-left: 60px;    
     }
 
     .iconos-datos, .redes-sociales, .logo-footer{
@@ -229,11 +236,11 @@ img {
         justify-content:space-around;
         flex-wrap: wrap;
         align-items: center;
-        }
+    }
 
     .footer-items .datos li{
         text-align: left;            
-        } 
+    } 
 
     .redes-sociales{
         display: flex;
@@ -247,9 +254,7 @@ img {
     .redes-sociales .iconos{  
         justify-content: space-evenly;  
            
-     }
-
-    
+    }   
 
 }
 
